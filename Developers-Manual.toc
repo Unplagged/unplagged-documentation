@@ -1,0 +1,83 @@
+\select@language {english}
+\contentsline {chapter}{Introduction}{VII}{chapter*.3}
+\contentsline {section}{Chapter Overview}{VIII}{section*.4}
+\contentsline {section}{Conventions}{IX}{section*.5}
+\contentsline {chapter}{\numberline {1}A Plagiarism Primer}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Plagiarism definition}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Basic Classification of Plagiarisms}{3}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Definition of Citation}{3}{subsection.1.2.1}
+\contentsline {subsubsection}{VroniPlag\IeC {\textquoteright }s classification of plagiarism}{5}{section*.6}
+\contentsline {paragraph}{Other categories}{6}{section*.7}
+\contentsline {section}{\numberline {1.3}How to detect plagiarism}{6}{section.1.3}
+\contentsline {section}{\numberline {1.4}Commercial software systems}{8}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}PlagAware}{9}{subsection.1.4.1}
+\contentsline {subsubsection}{Turnitin}{13}{section*.14}
+\contentsline {subsection}{\numberline {1.4.2}Ephorus}{16}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}PlagScan}{18}{subsection.1.4.3}
+\contentsline {subsubsection}{Plagscan costs}{20}{section*.26}
+\contentsline {subsection}{\numberline {1.4.4}Urkund}{22}{subsection.1.4.4}
+\contentsline {subsubsection}{Urkund costs}{23}{section*.30}
+\contentsline {subsection}{\numberline {1.4.5}Resume commercial software systems}{24}{subsection.1.4.5}
+\contentsline {section}{\numberline {1.5}Vroni Plag}{25}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Plagiarism detection steps}{26}{subsection.1.5.1}
+\contentsline {subsubsection}{Part 1:}{27}{section*.31}
+\contentsline {subsubsection}{Part 2:}{27}{section*.33}
+\contentsline {subsection}{\numberline {1.5.2}Technical support}{28}{subsection.1.5.2}
+\contentsline {chapter}{\numberline {2}Project Workflow and Requirements}{30}{chapter.2}
+\contentsline {section}{\numberline {2.1}The Workflow}{31}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Product Owner --- \enquote {The Debbie Meetings}}{32}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Team Meetings}{33}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Target Group}{35}{section.2.2}
+\contentsline {section}{\numberline {2.3}User roles}{35}{section.2.3}
+\contentsline {section}{\numberline {2.4}Basic functionalities}{36}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Register}{36}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Login}{37}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Files overview}{39}{subsection.2.4.3}
+\contentsline {subsubsection}{Set target}{39}{section*.45}
+\contentsline {subsubsection}{Parse}{40}{section*.49}
+\contentsline {subsubsection}{Download}{40}{section*.51}
+\contentsline {subsubsection}{Delete}{40}{section*.53}
+\contentsline {subsubsection}{File upload}{41}{section*.55}
+\contentsline {subsection}{\numberline {2.4.4}Parsed files overview}{41}{subsection.2.4.4}
+\contentsline {subsubsection}{Integration of detection plagiarism software}{42}{section*.57}
+\contentsline {subsubsection}{Delete}{42}{section*.59}
+\contentsline {subsubsection}{Simtext}{42}{section*.61}
+\contentsline {subsection}{\numberline {2.4.5}Edit profile}{43}{subsection.2.4.5}
+\contentsline {subsection}{\numberline {2.4.6}Googlesearch}{44}{subsection.2.4.6}
+\contentsline {subsection}{\numberline {2.4.7}Document Parser}{45}{subsection.2.4.7}
+\contentsline {section}{\numberline {2.5}Use Cases}{45}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Register}{45}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Login}{46}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}File Upload}{47}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}Parse}{48}{subsection.2.5.4}
+\contentsline {subsection}{\numberline {2.5.5}Googlesearch}{48}{subsection.2.5.5}
+\contentsline {chapter}{\numberline {3}Developing Unplagged}{49}{chapter.3}
+\contentsline {section}{\numberline {3.1}Development Environment}{50}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Git}{50}{subsection.3.1.1}
+\contentsline {subsubsection}{Installing Git Bash}{51}{section*.68}
+\contentsline {subsubsection}{Getting the source code of the unplagged project}{51}{section*.69}
+\contentsline {subsubsection}{The most important git commands}{52}{section*.70}
+\contentsline {subsubsection}{Handling conflicts in merging process}{54}{section*.71}
+\contentsline {subsection}{\numberline {3.1.2}Local Deployment}{55}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Netbeans}{57}{subsection.3.1.3}
+\contentsline {subsubsection}{Setting up PHPUnit}{58}{section*.72}
+\contentsline {subsubsection}{Configuring Netbeans}{59}{section*.73}
+\contentsline {subsubsection}{Documentation}{60}{section*.76}
+\contentsline {subsection}{\numberline {3.1.4}Continuous Integration}{61}{subsection.3.1.4}
+\contentsline {subsubsection}{Possible Improvements}{63}{section*.78}
+\contentsline {section}{\numberline {3.2}User Interface / User Experience}{63}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Responsive Layout using CSS3 Media Queries}{65}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Javascript and fallbacks}{67}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Frameworks}{69}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Zend Framework}{69}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Doctrine}{71}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Additional Software}{73}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Tesseract}{73}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Imagemagick}{74}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Simtext}{75}{subsection.3.4.3}
+\contentsline {chapter}{\numberline {4}Summary and Outlook}{78}{chapter.4}
+\contentsline {chapter}{\numberline {A}Meetings}{80}{appendix.A}
+\contentsline {chapter}{\numberline {B}Logged Time As Of March 11, 2012}{86}{appendix.B}
+\contentsline {chapter}{\numberline {C}Mockups}{101}{appendix.C}
+\contentsline {section}{\numberline {C.1}Hand-Drawn}{101}{section.C.1}
+\contentsline {section}{\numberline {C.2}Digitalized}{106}{section.C.2}
