@@ -1,43 +1,41 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.8.8)  17 JUL 2012 19:16
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.4.25)  17 JUL 2012 20:45
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**Developers-Manual.tex
-(./Developers-Manual.tex
+**F:/projects/unplagged/unplagged-documentation/part-2/Developers-Manual.tex
+(F:/projects/unplagged/unplagged-documentation/part-2/Developers-Manual.tex
 LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
-rman-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabi
-c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
-h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
-h, french, galician, german, ngerman, swissgerman, monogreek, greek, hungarian,
- icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, marathi, or
-iya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji,
- lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, pol
-ish, portuguese, romanian, russian, sanskrit, serbian, serbianc, slovak, sloven
-ian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded
-.
-(/usr/local/texlive/2011/texmf-dist/tex/latex/koma-script/scrreprt.cls
-Document Class: scrreprt 2011/04/02 v3.09 KOMA-Script document class (report)
-(/usr/local/texlive/2011/texmf-dist/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2011/04/02 v3.09 KOMA-Script package (KOMA-Script-dependent b
-asics and keyval usage)
+Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2011/04/02 v3.09 KOMA-Script package (KOMA-Script-independent 
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrreprt.cls
+Document Class: scrreprt 2010/09/17 v3.07 KOMA-Script document class (report)
+
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrkbase.sty
+Package: scrkbase 2010/09/17 v3.07 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbase.sty
+Package: scrbase 2010/09/17 v3.07 KOMA-Script package (KOMA-Script-independent 
 basics and keyval usage)
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/keyval.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2011/03/09 v3.09 KOMA-Script package (loading files)
-
-Package scrlfile, 2011/03/09 v3.09 KOMA-Script package (loading files)
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrlfile.sty
+Package: scrlfile 2009/03/25 v3.03 KOMA-Script package (loading files)
+Package scrlfile, 2009/03/25 v3.03 KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
-))) (/usr/local/texlive/2011/texmf-dist/tex/latex/koma-script/tocbasic.sty
-Package: tocbasic 2011/03/23 v3.09 KOMA-Script package (handling toc-files)
+)))
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\tocbasic.sty
+Package: tocbasic 2010/09/14 v3.06a KOMA-Script package (handling toc-files)
 )
 Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
@@ -49,17 +47,17 @@ Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
 (tocbasic)             for `lot' on input line 119.
 Class scrreprt Info: File `scrsize11pt.clo' used instead of
-(scrreprt)           file `scrsize11.clo' to setup font sizes on input line 134
-6.
+(scrreprt)           file `scrsize11.clo' to setup font sizes on input line 131
+0.
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
-File: scrsize11pt.clo 2011/04/02 v3.09 KOMA-Script font size class option (11pt
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrsize11pt.
+clo
+File: scrsize11pt.clo 2010/09/17 v3.07 KOMA-Script font size class option (11pt
 )
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/koma-script/typearea.sty
-Package: typearea 2011/04/02 v3.09 KOMA-Script package (type area)
-
-Package typearea, 2011/04/02 v3.09 KOMA-Script package (type area)
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\typearea.sty
+Package: typearea 2010/09/17 v3.07 KOMA-Script package (type area)
+Package typearea, 2010/09/17 v3.07 KOMA-Script package (type area)
                   Copyright (C) Frank Neukam, 1992-1994
                   Copyright (C) Markus Kohm, 1994-
 
@@ -84,7 +82,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.60002pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 1138.
+(typearea)              on input line 1134.
 )
 \c@part=\count80
 \c@chapter=\count81
@@ -99,39 +97,45 @@ Package typearea Info: These are the values describing the layout:
 \c@figure=\count87
 \c@table=\count88
 \bibindent=\dimen102
-) (/usr/local/texlive/2011/texmf-dist/tex/latex/base/fontenc.sty
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/t1enc.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/inputenc.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/ucs/utf8x.def
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\unicode\utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 ))
-(/usr/local/texlive/2011/texmf-dist/tex/latex/ucs/ucs.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\unicode\ucs.sty
 Package: ucs 2004/10/17 UCS: Unicode input support
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/ucs/data/uni-global.def
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\unicode\data\uni-global.
+def
 File: uni-global.def 2004/10/17 UCS: Unicode global data
 )
 \uc@secondtry=\count89
 \uc@combtoks=\toks17
 \uc@combtoksb=\toks18
 \uc@temptokena=\toks19
-)
-(/usr/local/texlive/2011/texmf-dist/tex/generic/babel/babel.sty
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2008/07/06 v3.8l The Babel package
 
-(/usr/local/texlive/2011/texmf-dist/tex/generic/babel/english.ldf
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\english.ldf"
 Language: english 2005/03/30 v3.3o English support from the babel system
 
-(/usr/local/texlive/2011/texmf-dist/tex/generic/babel/babel.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2008/07/06 v3.8l Babel common definitions
 \babel@savecnt=\count90
 \U@D=\dimen103
@@ -140,36 +144,29 @@ File: babel.def 2008/07/06 v3.8l Babel common definitions
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/fixltx2e.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fixltx2e.sty"
 Package: fixltx2e 2006/09/13 v1.1m fixes to LaTeX
 LaTeX Info: Redefining \em on input line 420.
 LaTeX Info: Redefining \textsubscript on input line 424.
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\natbib\natbib.sty
+Package: natbib 2009/11/07 8.31a (PWD, AO)
 \bibhang=\skip47
 \bibsep=\skip48
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count91
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/xcolor/xcolor.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/color.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Package option `usenames' ignored on input line 216.
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
-)
-(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
-)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/01/28 v0.05d Graphics/color for pdfTeX
 \Gread@gobject=\count92
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
@@ -182,36 +179,36 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/dvipsnam.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def"
 File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
-(/usr/local/texlive/2011/texmf-dist/tex/latex/ae/ae.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\ae.sty"
 Package: ae 2001/02/12 1.3 Almost European Computer Modern
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/fontenc.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/t1enc.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 )
 LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/ae/t1aer.fd
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aer.fd"
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )))
-(/usr/local/texlive/2011/texmf-dist/tex/latex/ellipsis/ellipsis.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\ellipsis\ellipsis.sty
 Package: ellipsis 2004/9/28 v1.6 ellipsis: fixes spacing around \protect \globa
 l \let \T1\textellipsis .\kern \fontdimen 3\font .\kern \fontdimen 3\font .\ker
 n \fontdimen 3\font \T1\textellipsis 
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/tools/xspace.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\xspace.sty"
 Package: xspace 2006/05/08 v1.12 Space after command names (DPC,MH)
 ))
-(/usr/local/texlive/2011/texmf-dist/tex/latex/ms/ragged2e.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\ragged2e.sty
 Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/ms/everysel.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\everysel.sty
 Package: everysel 2009/05/30 v1.1 EverySelectfont Package (MS)
 )
 \CenteringLeftskip=\skip49
@@ -229,13 +226,13 @@ Package: everysel 2009/05/30 v1.1 EverySelectfont Package (MS)
 \RaggedRightParindent=\skip61
 \JustifyingParindent=\skip62
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/csquotes/csquotes.sty
-Package: csquotes 2011/03/25 v5.1c context-sensitive quotations
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.sty
+Package: csquotes 2010/09/21 v5.0c context-sensitive quotations
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty
+Package: etoolbox 2010/09/12 v2.0a e-TeX tools for LaTeX
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/etex-pkg/etex.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\misc\etex.sty"
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
 \et@xins=\count93
 )
@@ -249,20 +246,20 @@ Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
 \csq@tshold=\count100
 \csq@ltx@everypar=\toks20
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/csquotes/csquotes.def
-File: csquotes.def 2011/03/25 v5.1c csquotes generic definitions
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.def
+File: csquotes.def 2010/09/21 v5.0c csquotes generic definitions
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/csquotes/csquotes.cfg
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.cfg
 File: csquotes.cfg 
 )
 Package csquotes Info: Option 'babel' depreciated.
 (csquotes)             Using 'autostyle'.
 Package csquotes Info: Enabling multilingual quotes.
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/microtype/microtype.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\microtype.sty
 Package: microtype 2010/01/10 v2.4 Micro-typography with pdfTeX (RS)
 \MT@toks=\toks21
 \MT@count=\count101
@@ -274,20 +271,19 @@ LaTeX Info: Redefining \textls on input line 1605.
 LaTeX Info: Redefining \textmicrotypecontext on input line 2156.
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/microtype/microtype.cfg
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\microtype.cfg
 File: microtype.cfg 2010/01/10 v2.4 microtype main configuration file (RS)
-))
-(/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/hyperref.sty
+)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2011/04/17 v6.82g Hypertext links for LaTeX
 
-(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
-Package: hobsub-hyperref 2011/04/23 v1.4 Bundle oberdiek, subset hyperref (HO)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2011/04/18 v1.3 Bundle oberdiek, subset hyperref (HO)
 
-(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
-Package: hobsub-generic 2011/04/23 v1.4 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2011/04/23 v1.4 Subsetting bundle oberdiek (HO)
-Package hobsub Info: Skipping package `infwarerr' (already loaded).
-Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2011/04/18 v1.3 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2011/04/18 v1.3 Subsetting bundle oberdiek (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
@@ -302,7 +298,7 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
 Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
-Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
+Package: pdftexcmds 2011/04/16 v0.15 Utilities of pdfTeX for LuaTeX (HO)
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
@@ -316,27 +312,27 @@ Package hobsub Info: Skipping package `hobsub' (already loaded).
 Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
 Package: hopatch 2011/01/30 v1.0 Wrapper for package hooks (HO)
 Package: xcolor-patch 2011/01/30 xcolor patch
-Package: atveryend 2011/04/23 v1.7 Hooks at very end of document (HO)
+Package: atveryend 2011/04/15 v1.6 Hooks at very end of document (HO)
 Package: atbegshi 2011/01/30 v1.15 At begin shipout hook (HO)
 Package: refcount 2010/12/01 v3.2 Data extraction from references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options of hyperref/bookmark (HO)
 )
-(/usr/local/texlive/2011/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
 )
 \@linkdim=\dimen105
 \Hy@linkcounter=\count102
 \Hy@pagecounter=\count103
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/pd1enc.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2011/04/17 v6.82g Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count104
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `breaklinks' set `true' on input line 3905.
@@ -349,7 +345,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4264.
 \c@Hy@tempcnt=\count105
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/url/url.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
@@ -373,12 +369,12 @@ LaTeX Info: Redefining \pageref on input line 5775.
 
 Package hyperref Message: Driver: hpdftex.
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/hpdftex.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2011/04/17 v6.82g Hyperref driver for pdfTeX
 \Fld@listcount=\count110
 \c@bookmark@seq@number=\count111
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -387,7 +383,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 22.
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/tools/longtable.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\longtable.sty"
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip65
 \LTright=\skip66
@@ -407,33 +403,33 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 )
 Class scrreprt Info: longtable captions redefined on input line 26.
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/datatool/datatool.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\datatool\datatool.sty
 Package: datatool 2009/11/15 v2.03 (NLCT)
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
 Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
 
-(/usr/local/texlive/2011/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
 \XKV@toks=\toks23
 \XKV@tempa@toks=\toks24
 \XKV@depth=\count117
 File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
 ))
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/ifthen.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/xfor/xfor.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\xfor\xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/fp/fp.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp.sty
 Package: fp 1995/04/02
 
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
-(/usr/local/texlive/2011/texmf-dist/tex/latex/fp/defpattern.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\defpattern.sty
 Package: defpattern 1994/10/12
 \actioncount=\count118
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/fp/fp-basic.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-basic.sty
 Package: fp-basic 1996/05/13
 \FP@xs=\count119
 \FP@xia=\count120
@@ -445,35 +441,35 @@ Package: fp-basic 1996/05/13
 \FP@regs=\count126
 \FP@times=\count127
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/fp/fp-addons.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-addons.sty
 Package: fp-addons 1995/03/15
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/fp/fp-snap.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-snap.sty
 Package: fp-snap 1995/04/05
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/fp/fp-exp.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-exp.sty
 Package: fp-exp 1995/04/03
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/fp/fp-trigo.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-trigo.sty
 Package: fp-trigo 1995/04/14
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/fp/fp-pas.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-pas.sty
 Package: fp-pas 1994/08/29
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/fp/fp-random.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-random.sty
 Package: fp-random 1995/02/23
 \FPseed=\count128
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/fp/fp-eqn.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-eqn.sty
 Package: fp-eqn 1995/04/03
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/fp/fp-upn.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-upn.sty
 Package: fp-upn 1996/10/21
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/fp/fp-eval.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-eval.sty
 Package: fp-eval 1995/04/03
 ))
-(/usr/local/texlive/2011/texmf-dist/tex/latex/substr/substr.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\substr\substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
 \c@su@anzahl=\count129
 )
@@ -521,34 +517,34 @@ Package: substr 2009/10/20 v1.2 Handle substrings
 \dtl@entrycr=\count147
 \dtl@sortresult=\count148
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/lscape.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphics.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/trig.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 ))
-(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphicx.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 \Gin@req@height=\dimen109
 \Gin@req@width=\dimen110
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/nameref.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
-(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count149
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/listings/listings.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
 \lst@mode=\count150
 \lst@gtempboxa=\box31
 \lst@token=\toks46
@@ -562,40 +558,40 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 \lst@lineno=\count155
 \lst@maxwidth=\dimen114
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/listings/lstmisc.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 \c@lstnumber=\count156
 \lst@skipnumbers=\count157
 \lst@framebox=\box32
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/listings/listings.cfg
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
 File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/courier.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\courier.sty"
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/listings/lstlang1.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/listings/lstlang1.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/listings/lstlang1.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/listings/lstlang2.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang2.sty
 File: lstlang2.sty 2004/09/05 1.3 listings language file
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/listings/lstmisc.sty
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 )
-(/usr/local/texlive/2011/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2010/01/09 v3.1m Customizing captions (AR)
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+Package: caption 2011/09/30 v3.2c Customizing captions (AR)
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2010/01/14 v3.1m caption3 kernel (AR)
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+Package: caption3 2011/10/09 v1.4 caption3 kernel (AR)
 \captionmargin=\dimen115
 \captionmargin@=\dimen116
 \captionwidth=\dimen117
@@ -609,17 +605,21 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/caption/ltcaption.sty
-Package: ltcaption 2008/03/28 v1.2 longtable captions (AR)
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\ltcaption.sty
+Package: ltcaption 2011/09/12 v1.3 longtable captions (AR)
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
-(./Developers-Manual.aux (./parts/title.aux) (./parts/preface.aux)
-(./parts/features.aux) (./parts/summary-and-outlook.aux) (./parts/appendix.aux)
+(F:\projects\unplagged\unplagged-documentation\part-2\Developers-Manual.aux
+(F:\projects\unplagged\unplagged-documentation\part-2\parts/title.aux)
+(F:\projects\unplagged\unplagged-documentation\part-2\parts/preface.aux)
+(F:\projects\unplagged\unplagged-documentation\part-2\parts/introduction.aux)
+(F:\projects\unplagged\unplagged-documentation\part-2\parts/features.aux)
+(F:\projects\unplagged\unplagged-documentation\part-2\parts/showtime.aux)
+(F:\projects\unplagged\unplagged-documentation\part-2\parts/summary-and-outlook
+.aux) (F:\projects\unplagged\unplagged-documentation\part-2\parts/appendix.aux)
 )
-\openout1 = `Developers-Manual.aux'.
-
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
 LaTeX Font Info:    ... okay on input line 82.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
@@ -634,10 +634,10 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
 LaTeX Font Info:    ... okay on input line 82.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
 LaTeX Font Info:    ... okay on input line 82.
- (/usr/local/texlive/2011/texmf-dist/tex/latex/ucs/ucsencs.def
+ (C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\unicode\ucsencs.def
 File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
 )
-(/usr/local/texlive/2011/texmf-dist/tex/context/base/supp-pdf.mkii
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count159
 \scratchdimen=\dimen121
@@ -648,7 +648,6 @@ File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
 \MPscratchCnt=\count162
 \MPscratchDim=\dimen122
 \MPnumerator=\count163
-\makeMPintoPDFobject=\count164
 \everyMPtoPDFconversion=\toks48
 )
 LaTeX Info: Redefining \dots on input line 82.
@@ -663,7 +662,7 @@ Package microtype Info: Using default expansion set `basictext'.
 Package microtype Info: No tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
- (/usr/local/texlive/2011/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+ (C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2009/11/09 v2.0 microtype config. file: Computer Modern Roman 
 (RS)
 )
@@ -673,80 +672,56 @@ LaTeX Info: Redefining \ref on input line 82.
 LaTeX Info: Redefining \pageref on input line 82.
 LaTeX Info: Redefining \nameref on input line 82.
 
-(./Developers-Manual.out) (./Developers-Manual.out)
+(F:\projects\unplagged\unplagged-documentation\part-2\Developers-Manual.out)
+(F:\projects\unplagged\unplagged-documentation\part-2\Developers-Manual.out)
 \@outlinefile=\write4
-\openout4 = `Developers-Manual.out'.
-
-
-(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Managing graphics extensions (HO)
-)
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-\c@lstlisting=\count165
+\c@lstlisting=\count164
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-\openout2 = `parts/title.aux'.
 
-
-(./parts/title.tex
-(/usr/local/texlive/2011/texmf-dist/tex/latex/ucs/data/uni-32.def
+(F:\projects\unplagged\unplagged-documentation\part-2\parts/title.tex
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\unicode\data\uni-32.def
 File: uni-32.def 2004/10/17 UCS: Unicode data U+2000..U+20FF
 ) [1
 
 
 
 
-{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+{C:/Users/Dominik/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
 LaTeX Font Info:    Try loading font information for T1+aess on input line 96.
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/ae/t1aess.fd
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aess.fd"
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 )
 Package tocbasic Info: character protrusion at toc deactivated on input line 96
 .
 
-(./Developers-Manual.toc
+(F:\projects\unplagged\unplagged-documentation\part-2\Developers-Manual.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 3.
+(Font)              <10.95> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 3.
+(Font)              <8> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 3.
+(Font)              <6> on input line 4.
 )
 \tf@toc=\write5
-\openout5 = `Developers-Manual.toc'.
 
- [1
+[1
 
 
 ]
 Package tocbasic Info: character protrusion at lof deactivated on input line 97
 .
- (./Developers-Manual.lof)
+ (F:\projects\unplagged\unplagged-documentation\part-2\Developers-Manual.lof)
 \tf@lof=\write6
-\openout6 = `Developers-Manual.lof'.
-
  [2
 
 ]
-\openout2 = `parts/preface.aux'.
-
-
 No file parts/preface.tex.
-\openout2 = `parts/features.aux'.
-
-(./parts/features.tex
+(F:\projects\unplagged\unplagged-documentation\part-2\parts/introduction.tex
+(C:\Users\Dominik\AppData\Roaming\MiKTeX\2.9\tex\latex\unicode\data\uni-254.def
+File: uni-254.def 2004/10/17 UCS: Unicode data U+FE00..U+FEFF
+)
 Chapter 1.
 
 Class scrreprt Warning: \float@addtolists detected!
@@ -755,72 +730,88 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              Support for \float@addtolists may be removed from
 (scrreprt)              `scrreprt' soon .
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.24 \section
-             {User avatar} [1
+l.104 \include{parts/introduction}
+                                   [1
 
-
-
-
-] [2]) [3]
-\openout2 = `parts/summary-and-outlook.aux'.
-
- (./parts/summary-and-outlook.tex
-Chapter 2.
-) [4
 
 
 
 ]
-\openout2 = `parts/appendix.aux'.
+(F:\projects\unplagged\unplagged-documentation\part-2\parts/features.tex
+Chapter 2.
+[2
 
- (./parts/appendix.tex
-Appendix A.
+
+
+] [3]) [4]
+(F:\projects\unplagged\unplagged-documentation\part-2\parts/showtime.tex
+Chapter 3.
 ) [5
 
 
 
-] (./Developers-Manual.bbl)
+]
+(F:\projects\unplagged\unplagged-documentation\part-2\parts/summary-and-outlook
+.tex
+Chapter 4.
+) [6
+
+
+
+] (F:\projects\unplagged\unplagged-documentation\part-2\parts/appendix.tex
+Appendix A.
+) [7
+
+
+
+]
+(F:\projects\unplagged\unplagged-documentation\part-2\Developers-Manual.bbl)
 
 Package caption Warning: Unused \captionsetup[lstlisting] on input line 74.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
-[6
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
+[8
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
- (./Developers-Manual.aux (./parts/title.aux) (./parts/preface.aux)
-(./parts/features.aux) (./parts/summary-and-outlook.aux) (./parts/appendix.aux)
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
+ (F:\projects\unplagged\unplagged-documentation\part-2\Developers-Manual.aux (F
+:\projects\unplagged\unplagged-documentation\part-2\parts/title.aux)
+(F:\projects\unplagged\unplagged-documentation\part-2\parts/preface.aux)
+(F:\projects\unplagged\unplagged-documentation\part-2\parts/introduction.aux)
+(F:\projects\unplagged\unplagged-documentation\part-2\parts/features.aux)
+(F:\projects\unplagged\unplagged-documentation\part-2\parts/showtime.aux)
+(F:\projects\unplagged\unplagged-documentation\part-2\parts/summary-and-outlook
+.aux) (F:\projects\unplagged\unplagged-documentation\part-2\parts/appendix.aux)
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
 Package rerunfilecheck Info: File `Developers-Manual.out' has not changed.
-(rerunfilecheck)             Checksum: DF3E054326D51F975AAE79766BE32272;873.
+(rerunfilecheck)             Checksum: CE85727509B80316772D42E81AFDB608;994.
  ) 
 Here is how much of TeX's memory you used:
- 14991 strings out of 493633
- 228091 string characters out of 3143378
- 449796 words of memory out of 3000000
- 17852 multiletter control sequences out of 15000+200000
+ 14850 strings out of 494053
+ 229098 string characters out of 3146179
+ 449987 words of memory out of 3000000
+ 17691 multiletter control sequences out of 15000+200000
  37887 words of font info for 125 fonts, out of 3000000 for 9000
- 831 hyphenation exceptions out of 8191
- 57i,8n,100p,824b,417s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pf
-b></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
-sr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
-/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></us
-r/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Developers-Manual.pdf (9 pages, 92466 bytes).
+ 715 hyphenation exceptions out of 8191
+ 55i,8n,97p,877b,420s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Developers-Manual.pdf (11 pages, 109891 bytes).
 PDF statistics:
- 162 PDF objects out of 1000 (max. 8388607)
- 142 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 40561 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 178 PDF objects out of 1000 (max. 8388607)
+ 31 named destinations out of 1000 (max. 500000)
+ 40577 words of extra memory for PDF output out of 42996 (max. 10000000)
 
