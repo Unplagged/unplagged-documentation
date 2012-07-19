@@ -4,16 +4,16 @@
 \contentsline {section}{\numberline {2.1}Notifications and Comments}{2}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Recent activity stream}{2}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Comments plugin}{3}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Fragments}{5}{section.2.2}
+\contentsline {section}{\numberline {2.2}Fragments}{6}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Creating a fragment}{6}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Rating a fragment}{6}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Barcode}{6}{section.2.3}
-\contentsline {section}{\numberline {2.4}User avatar}{6}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Avatar cropping}{6}{subsection.2.4.1}
-\contentsline {section}{\numberline {2.5}Automatic Plagiarism Detection Webservice}{7}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}PlagAware}{7}{subsection.2.5.1}
-\contentsline {section}{\numberline {2.6}Permission and role management}{7}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Collaborators}{7}{subsection.2.6.1}
-\contentsline {chapter}{\numberline {3}Showtime}{8}{chapter.3}
-\contentsline {chapter}{\numberline {4}Summary and Outlook}{9}{chapter.4}
-\contentsline {chapter}{\numberline {A}Meetings}{10}{appendix.A}
+\contentsline {subsection}{\numberline {2.2.2}Rating a fragment}{9}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Barcode}{9}{section.2.3}
+\contentsline {section}{\numberline {2.4}User avatar}{9}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Avatar cropping}{9}{subsection.2.4.1}
+\contentsline {section}{\numberline {2.5}Automatic Plagiarism Detection Webservice}{9}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}PlagAware}{9}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.6}Permission and role management}{10}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Collaborators}{10}{subsection.2.6.1}
+\contentsline {chapter}{\numberline {3}Showtime}{11}{chapter.3}
+\contentsline {chapter}{\numberline {4}Summary and Outlook}{12}{chapter.4}
+\contentsline {chapter}{\numberline {A}Meetings}{13}{appendix.A}

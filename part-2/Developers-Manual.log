@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.8.8)  18 JUL 2012 20:52
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.8.8)  19 JUL 2012 19:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -774,7 +774,7 @@ l.104 \include{parts/introduction}
 
  (./parts/features.tex
 Chapter 2.
-<images/feature-activity-stream.png, id=127, 1130.2225pt x 357.335pt>
+<images/feature-activity-stream.png, id=135, 1130.2225pt x 357.335pt>
 File: images/feature-activity-stream.png Graphic file (type png)
 
 <use images/feature-activity-stream.png>
@@ -805,7 +805,7 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 26.
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-<images/feature-comment.png, id=132, 906.38625pt x 187.70125pt>
+<images/feature-comment.png, id=140, 906.38625pt x 187.70125pt>
 File: images/feature-comment.png Graphic file (type png)
 
 <use images/feature-comment.png>
@@ -831,12 +831,61 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 72--72
 [][][][][][][][] 
  []
 
-[5] [6]) [7]
+[5] <images/feature-fragment.png, id=205, 1086.0575pt x 436.63126pt>
+File: images/feature-fragment.png Graphic file (type png)
+
+<use images/feature-fragment.png>
+Package pdftex.def Info: images/feature-fragment.png used on input line 106.
+(pdftex.def)             Requested size: 405.70839pt x 163.11005pt.
+
+Overfull \hbox (1.54543pt too wide) in paragraph at lines 106--107
+ [][] 
+ []
+
+[6 <./images/feature-fragment.png (PNG copy)>]
+<images/fragment-form.png, id=211, 1086.0575pt x 554.07pt>
+File: images/fragment-form.png Graphic file (type png)
+
+<use images/fragment-form.png>
+Package pdftex.def Info: images/fragment-form.png used on input line 123.
+(pdftex.def)             Requested size: 405.70839pt x 206.98102pt.
+
+Overfull \hbox (1.54543pt too wide) in paragraph at lines 123--124
+ [][] 
+ []
+
+[7 <./images/fragment-form.png (PNG copy)>]
+<images/fragment-modern-way-1.png, id=216, 1086.0575pt x 679.53876pt>
+File: images/fragment-modern-way-1.png Graphic file (type png)
+
+<use images/fragment-modern-way-1.png>
+Package pdftex.def Info: images/fragment-modern-way-1.png used on input line 14
+0.
+(pdftex.def)             Requested size: 405.70839pt x 253.85173pt.
+
+Overfull \hbox (1.54543pt too wide) in paragraph at lines 140--141
+ [][] 
+ []
+
+<images/fragment-modern-way-2.png, id=217, 1086.0575pt x 464.73625pt>
+File: images/fragment-modern-way-2.png Graphic file (type png)
+
+<use images/fragment-modern-way-2.png>
+Package pdftex.def Info: images/fragment-modern-way-2.png used on input line 14
+9.
+(pdftex.def)             Requested size: 405.70839pt x 173.60907pt.
+
+Overfull \hbox (1.54543pt too wide) in paragraph at lines 149--150
+ [][] 
+ []
+
+[8 <./images/fragment-modern-way-1.png (PNG copy)> <./images/fragment-modern-wa
+y-2.png (PNG copy)>] [9]) [10]
 \openout2 = `parts/showtime.aux'.
 
  (./parts/showtime.tex
 Chapter 3.
-) [8
+) [11
 
 
 
@@ -845,7 +894,7 @@ Chapter 3.
 
  (./parts/summary-and-outlook.tex
 Chapter 4.
-) [9
+) [12
 
 
 
@@ -854,13 +903,13 @@ Chapter 4.
 
  (./parts/appendix.tex
 Appendix A.
-) [10
+) [13
 
 
 
 ] (./Developers-Manual.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
- [11
+ [14
 
 
 ]
@@ -873,29 +922,34 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
 Package rerunfilecheck Info: File `Developers-Manual.out' has not changed.
 (rerunfilecheck)             Checksum: 471CFFE91E4954F711925E1BF3A9C8B3;1134.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 15644 strings out of 493633
- 234951 string characters out of 3143378
- 604934 words of memory out of 3000000
- 18317 multiletter control sequences out of 15000+200000
- 48039 words of font info for 209 fonts, out of 3000000 for 9000
+ 15736 strings out of 493633
+ 236278 string characters out of 3143378
+ 605240 words of memory out of 3000000
+ 18339 multiletter control sequences out of 15000+200000
+ 54412 words of font info for 260 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  57i,8n,100p,824b,1927s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/t
-exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
-xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
-ive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texliv
-e/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/
-2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive
-/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/
-2011/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2011/tex
-mf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on Developers-Manual.pdf (14 pages, 272490 bytes).
+exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/te
+xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/te
+xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
+ve/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive
+/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2
+011/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/
+2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
+011/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2011/texm
+f-dist/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on Developers-Manual.pdf (17 pages, 1242751 bytes).
 PDF statistics:
- 280 PDF objects out of 1000 (max. 8388607)
- 250 compressed objects within 3 object streams
- 85 named destinations out of 1000 (max. 500000)
- 53915 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 310 PDF objects out of 1000 (max. 8388607)
+ 272 compressed objects within 3 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 54447 words of extra memory for PDF output out of 61914 (max. 10000000)
 
