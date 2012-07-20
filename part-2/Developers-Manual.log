@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.8.8)  19 JUL 2012 19:55
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.8.8)  20 JUL 2012 18:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -774,15 +774,16 @@ l.104 \include{parts/introduction}
 
  (./parts/features.tex
 Chapter 2.
-<images/feature-activity-stream.png, id=135, 1130.2225pt x 357.335pt>
+(./parts/features/notifications-comments.tex
+<images/feature-activity-stream.png, id=138, 1130.2225pt x 357.335pt>
 File: images/feature-activity-stream.png Graphic file (type png)
 
 <use images/feature-activity-stream.png>
 Package pdftex.def Info: images/feature-activity-stream.png used on input line 
-19.
+14.
 (pdftex.def)             Requested size: 405.70839pt x 128.26973pt.
 
-Overfull \hbox (1.54543pt too wide) in paragraph at lines 19--20
+Overfull \hbox (1.54543pt too wide) in paragraph at lines 14--15
  [][] 
  []
 
@@ -795,24 +796,24 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 26.
+nput line 21.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 26--26
+Overfull \hbox (6.0pt too wide) in paragraph at lines 21--21
 [][][][][][][][] 
  []
 
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 26.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 21.
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-<images/feature-comment.png, id=140, 906.38625pt x 187.70125pt>
+<images/feature-comment.png, id=143, 906.38625pt x 187.70125pt>
 File: images/feature-comment.png Graphic file (type png)
 
 <use images/feature-comment.png>
-Package pdftex.def Info: images/feature-comment.png used on input line 40.
+Package pdftex.def Info: images/feature-comment.png used on input line 35.
 (pdftex.def)             Requested size: 405.70839pt x 84.0151pt.
 
-Overfull \hbox (1.54543pt too wide) in paragraph at lines 40--41
+Overfull \hbox (1.54543pt too wide) in paragraph at lines 35--36
  [][] 
  []
 
@@ -820,72 +821,156 @@ Overfull \hbox (1.54543pt too wide) in paragraph at lines 40--41
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [3 <./images/feature-activity-stream.png (PNG copy)>]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 47--47
+Overfull \hbox (6.0pt too wide) in paragraph at lines 42--42
 [][][][][][][][] 
  []
 
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 50.
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 45.
 [4 <./images/feature-comment.png (PNG copy)>]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 72--72
+Overfull \hbox (6.0pt too wide) in paragraph at lines 67--67
 [][][][][][][][] 
  []
 
-[5] <images/feature-fragment.png, id=205, 1086.0575pt x 436.63126pt>
+) (./parts/features/fragments.tex [5]
+<images/feature-fragment.png, id=208, 1086.0575pt x 436.63126pt>
 File: images/feature-fragment.png Graphic file (type png)
 
 <use images/feature-fragment.png>
-Package pdftex.def Info: images/feature-fragment.png used on input line 106.
+Package pdftex.def Info: images/feature-fragment.png used on input line 11.
 (pdftex.def)             Requested size: 405.70839pt x 163.11005pt.
 
-Overfull \hbox (1.54543pt too wide) in paragraph at lines 106--107
+Overfull \hbox (1.54543pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
 [6 <./images/feature-fragment.png (PNG copy)>]
-<images/fragment-form.png, id=211, 1086.0575pt x 554.07pt>
+<images/fragment-form.png, id=214, 1086.0575pt x 554.07pt>
 File: images/fragment-form.png Graphic file (type png)
 
 <use images/fragment-form.png>
-Package pdftex.def Info: images/fragment-form.png used on input line 123.
+Package pdftex.def Info: images/fragment-form.png used on input line 28.
 (pdftex.def)             Requested size: 405.70839pt x 206.98102pt.
 
-Overfull \hbox (1.54543pt too wide) in paragraph at lines 123--124
+Overfull \hbox (1.54543pt too wide) in paragraph at lines 28--29
  [][] 
  []
 
-[7 <./images/fragment-form.png (PNG copy)>]
-<images/fragment-modern-way-1.png, id=216, 1086.0575pt x 679.53876pt>
+<images/fragment-modern-way-1.png, id=216, 1086.0575pt x 496.85625pt>
 File: images/fragment-modern-way-1.png Graphic file (type png)
 
 <use images/fragment-modern-way-1.png>
-Package pdftex.def Info: images/fragment-modern-way-1.png used on input line 14
-0.
-(pdftex.def)             Requested size: 405.70839pt x 253.85173pt.
+Package pdftex.def Info: images/fragment-modern-way-1.png used on input line 43
+.
+(pdftex.def)             Requested size: 405.70839pt x 185.60797pt.
 
-Overfull \hbox (1.54543pt too wide) in paragraph at lines 140--141
+Overfull \hbox (1.54543pt too wide) in paragraph at lines 43--44
  [][] 
  []
 
-<images/fragment-modern-way-2.png, id=217, 1086.0575pt x 464.73625pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7 <./images/fragment-form.png (PNG copy)>]
+<images/fragment-modern-way-2.png, id=222, 1086.0575pt x 464.73625pt>
 File: images/fragment-modern-way-2.png Graphic file (type png)
 
 <use images/fragment-modern-way-2.png>
-Package pdftex.def Info: images/fragment-modern-way-2.png used on input line 14
-9.
+Package pdftex.def Info: images/fragment-modern-way-2.png used on input line 56
+.
 (pdftex.def)             Requested size: 405.70839pt x 173.60907pt.
 
-Overfull \hbox (1.54543pt too wide) in paragraph at lines 149--150
+Overfull \hbox (1.54543pt too wide) in paragraph at lines 56--57
  [][] 
  []
 
 [8 <./images/fragment-modern-way-1.png (PNG copy)> <./images/fragment-modern-wa
-y-2.png (PNG copy)>] [9]) [10]
+y-2.png (PNG copy)>]
+<images/feature-single-rating.png, id=227, 831.105pt x 111.41624pt>
+File: images/feature-single-rating.png Graphic file (type png)
+
+<use images/feature-single-rating.png>
+Package pdftex.def Info: images/feature-single-rating.png used on input line 71
+.
+(pdftex.def)             Requested size: 405.70839pt x 54.38872pt.
+
+Overfull \hbox (1.54543pt too wide) in paragraph at lines 71--72
+ [][] 
+ []
+
+) (./parts/features/avatar.tex [9 <./images/feature-single-rating.png (PNG copy
+)>] <images/cropped-avatar.png, id=233, 880.28876pt x 255.95625pt>
+File: images/cropped-avatar.png Graphic file (type png)
+
+<use images/cropped-avatar.png>
+Package pdftex.def Info: images/cropped-avatar.png used on input line 11.
+(pdftex.def)             Requested size: 405.70839pt x 117.96391pt.
+
+Overfull \hbox (1.54543pt too wide) in paragraph at lines 11--12
+ [][] 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 18--18
+[][][][][][][][] 
+ []
+
+[10 <./images/cropped-avatar.png (PNG copy)>])
+(./parts/features/plagiarism-webservices.tex [11]
+<images/feature-plagaware-result.png, id=277, 1031.855pt x 727.71875pt>
+File: images/feature-plagaware-result.png Graphic file (type png)
+
+<use images/feature-plagaware-result.png>
+Package pdftex.def Info: images/feature-plagaware-result.png used on input line
+ 15.
+(pdftex.def)             Requested size: 405.70839pt x 286.11882pt.
+
+Overfull \hbox (1.54543pt too wide) in paragraph at lines 15--16
+ [][] 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 23--23
+[][][][][][][][] 
+ []
+
+[12 <./images/feature-plagaware-result.png>]) [13]
+(./parts/features/barcode.tex
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 7.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/ae/omsaer.fd
+File: omsaer.fd 1999/12/27
+)
+LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
+
+<images/feature-barcode-website.png, id=316, 1021.8175pt x 208.78pt>
+File: images/feature-barcode-website.png Graphic file (type png)
+
+<use images/feature-barcode-website.png>
+Package pdftex.def Info: images/feature-barcode-website.png used on input line 
+22.
+(pdftex.def)             Requested size: 405.70839pt x 82.89247pt.
+
+Overfull \hbox (1.54543pt too wide) in paragraph at lines 22--23
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[14]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 31--31
+[][][][][][][][] 
+ []
+
+[15 <./images/feature-barcode-website.png (PNG copy)>])) [16]
 \openout2 = `parts/showtime.aux'.
 
- (./parts/showtime.tex
+
+(./parts/showtime.tex
 Chapter 3.
-) [11
+) [17
 
 
 
@@ -894,7 +979,7 @@ Chapter 3.
 
  (./parts/summary-and-outlook.tex
 Chapter 4.
-) [12
+) [18
 
 
 
@@ -903,13 +988,13 @@ Chapter 4.
 
  (./parts/appendix.tex
 Appendix A.
-) [13
+) [19
 
 
 
 ] (./Developers-Manual.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
- [14
+ [20
 
 
 ]
@@ -921,20 +1006,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
 Package rerunfilecheck Info: File `Developers-Manual.out' has not changed.
-(rerunfilecheck)             Checksum: 471CFFE91E4954F711925E1BF3A9C8B3;1134.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Checksum: F9C25F756875A7E32CC0BDBA7E24A9AA;1068.
  ) 
 Here is how much of TeX's memory you used:
- 15736 strings out of 493633
- 236278 string characters out of 3143378
- 605240 words of memory out of 3000000
- 18339 multiletter control sequences out of 15000+200000
- 54412 words of font info for 260 fonts, out of 3000000 for 9000
+ 16088 strings out of 493633
+ 241748 string characters out of 3143378
+ 613468 words of memory out of 3000000
+ 18503 multiletter control sequences out of 15000+200000
+ 59662 words of font info for 320 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 57i,8n,100p,824b,1927s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 57i,8n,100p,837b,1927s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/te
 xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/te
@@ -943,13 +1024,14 @@ live/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
 ve/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive
 /2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2
 011/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/
-2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
-011/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2011/texm
-f-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on Developers-Manual.pdf (17 pages, 1242751 bytes).
+2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
+011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/20
+11/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2011/texmf
+-dist/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on Developers-Manual.pdf (23 pages, 1504850 bytes).
 PDF statistics:
- 310 PDF objects out of 1000 (max. 8388607)
- 272 compressed objects within 3 object streams
- 92 named destinations out of 1000 (max. 500000)
- 54447 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 459 PDF objects out of 1000 (max. 8388607)
+ 407 compressed objects within 5 object streams
+ 187 named destinations out of 1000 (max. 500000)
+ 54459 words of extra memory for PDF output out of 61914 (max. 10000000)
 

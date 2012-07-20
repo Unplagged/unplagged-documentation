@@ -7,13 +7,12 @@
 \contentsline {section}{\numberline {2.2}Fragments}{6}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Creating a fragment}{6}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Rating a fragment}{9}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Barcode}{9}{section.2.3}
-\contentsline {section}{\numberline {2.4}User avatar}{9}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Avatar cropping}{9}{subsection.2.4.1}
-\contentsline {section}{\numberline {2.5}Automatic Plagiarism Detection Webservice}{9}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}PlagAware}{9}{subsection.2.5.1}
-\contentsline {section}{\numberline {2.6}Permission and role management}{10}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Collaborators}{10}{subsection.2.6.1}
-\contentsline {chapter}{\numberline {3}Showtime}{11}{chapter.3}
-\contentsline {chapter}{\numberline {4}Summary and Outlook}{12}{chapter.4}
-\contentsline {chapter}{\numberline {A}Meetings}{13}{appendix.A}
+\contentsline {section}{\numberline {2.3}User avatar}{9}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Avatar cropping}{9}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Automatic Plagiarism Detection Webservices}{11}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}PlagAware}{12}{subsection.2.4.1}
+\contentsline {section}{\numberline {2.5}Permission and role management}{14}{section.2.5}
+\contentsline {section}{\numberline {2.6}Barcode}{14}{section.2.6}
+\contentsline {chapter}{\numberline {3}Showtime}{17}{chapter.3}
+\contentsline {chapter}{\numberline {4}Summary and Outlook}{18}{chapter.4}
+\contentsline {chapter}{\numberline {A}Meetings}{19}{appendix.A}
