@@ -1,15 +1,85 @@
 \chapter{Project Overview}\label{chap:Overview}
 
-The main project description we started to work with was quite short with about 300 words and was also hugely complemented and clarified in meetings with Prof. Weber-Wulff. Nonetheless it contains very important bits and pieces that are the foundation of what was built during the project:
+The main project description we started to work with was quite short with about 300 words and was also hugely complemented and clarified in meetings with Prof. Weber-Wulff. Nonetheless it contains very important parts that are the foundation of what was built during the project:
 
 \begin{quote}
 \enquote{Right. I'm the plagiarism \enquote{huntress}. I've tested plagiarism detection software since 2004. Mostly, they suck. They either don't work, or are a pain to use, or both. I've spent 10 years trying to educate people about plagiarism, and still the media thinks I have a magic secret for discovering plagiarism, as demonstrated on the GuttenPlagWiki and the VroniPlagWiki. What actually happens there is that quite a number of tools are used for preparing texts, discovering possible sources, comparing them, and documenting them. The last part is done by hand and takes an enormous amount of time.
 
 The idea is to set up a Plagiarism Detection Cockpit that integrates all sorts of bits and pieces, but leaves the teacher in command. It is not to be a general test system that spits out a number for every paper submitted, although the integration of as many such systems as possible will be one of the necessary features of the system. There will be a lot of thought needed for the interface design, as there are massive amounts of data that need to be displayed. How can this be compressed and fit on a screen? For example, a barcode-generation needs to be integrated.
 
-The goal will be to provide a tool that easily produces simple-to-read documentation and deals with all sorts of nastiness that might turn up on the way. The tool must be multi-lingual and open source. It would also be cool to integrate some of the little tools such as the Android-based OCR-Scanner that was developed in the SS 2011. I would like for the team to use an agile development methodology so that we can continuiously test with teachers and professors and *Plaggers.
+The goal will be to provide a tool that easily produces simple-to-read 
+documentation and deals with all sorts of nastiness that might 
+turn up on the way. The tool must be multi-lingual and open source.
+ It would also be cool to integrate some of the little tools such 
+ as the Android-based OCR-Scanner that was developed in the SS 2011. 
+ I would like for the team to use an agile development methodology 
+ so that we can continuiously test with teachers and professors 
+ and *Plaggers.
 
-One of the first tasks will be collecting up the computing literature on the topic of plagiarism discovery. A wiki needs to be set up with links to material (online and offline), comments on the papers, and as many navigational indices as possible.}\citep{projectDescription}
+One of the first tasks will be collecting up the computing 
+literature on the topic of plagiarism discovery. A wiki needs to 
+be set up with links to material (online and offline), comments on 
+the papers, and as many navigational indices as possible.}\citep{projectDescription}
 \end{quote}
+
+In the beginning the main takeaways we took from this text were:
+
+\begin{itemize}
+\item \textbf{no} automated process, \enquote{just} a tool that aids the users workflow
+\item needs an open source license
+\item multi language support
+\end{itemize}
+
+If you read the text carefully though, you may notice that we 
+overlooked or at least marginalized some important clues, but you 
+will find descriptions of those problems later on in the chapter \nameref{chap:summaryAndOutlook}.
+
+One important information that was only stated during the first project proposal was, that it also needed to be web based.
+
+For the frontend this made the choices of languages and technologies pretty easy, because there are some clear web standards, without much alternatives aside from the version numbers. As we wanted to develop in a future-proof manner and chose to support only from Internet Explorer 8 upwards, this lead us to CSS3 for styling, HTML5 for the markup and JavaScript for client-side scripting. With JavaScript being the only one of those three with a real competitior in \href{http://www.dartlang.org/}{Googles Dart}, but as the browser support is still very weak, 
+this wasn't a possibility.
+
+On the server-side however the possibilities for a programming language and platforms are a little bit broader than this. The most
+important criterias for those choices were that it had to be very widespread and flexible, because for
+an open source project it's easier to gather a community with those kind of parameters. Naturally the familiarity and preferences of the team members also played a role here.
+
+\section{Statistics}
+
+To make an overview of the system a bit easier we gathered
+
+\section{Licensing -- GPLv3}
+
+Choosing an open source license was something that was surprisingly difficult for us,
+because we never had to do it before and there are so many different possibilites out there with many upsides and downsides.
+
+We eventually decided to use the GNU Public License in version 3(GPLv3). The reasons for this choice are the very widespread usage of it, meaning that many people are already 
+familiar with it, the international validity of the specified terms and the \enquote{viral}
+character of it, so that any additions and changes to the software also need to be provided 
+under the same open source license.
+
+It has therefore the benefit of keeping the possibility to dual-license the system with another proprietary license later on in order to maybe even sell it to organizations who want to include
+customizations without making them public, which would be mandatory under the GPLv3.
+
+\section{Techniques and Technologies}
+
+Over the course of the project we integrated some kind of \enquote{toolbox} of libraries and frameworks, which 
+helped us develop faster, more efficient or according to some kind of \enquote{best-practices}
+in some areas. 
+
+\subsection{Zend Framework}
+
+\subsection{Doctrine ORM}
+
+\subsection{HTML5 Boilerplate}
+
+\subsection{jQuery}
+
+\subsection{Twitter Bootstrap}
+
+\subsection{Responsive Design}
+
+\subsection{SIM}
+
+\subsection{Tesseract, Imagemagick and Ghostscript}
 
 
