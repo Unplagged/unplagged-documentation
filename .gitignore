@@ -6,4 +6,6 @@
 *.out
 *.blg
 *.bbl
+*.lof
+Developers-Manual.pdf
 *.synctex.gz
