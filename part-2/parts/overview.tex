@@ -52,7 +52,7 @@ As you will see below, the usage of a database was also made in a flexible way. 
 
 \section{Statistics}
 
-We gathered some data of the state of Unplagged as of 7th July 2012 with \href{http://cloc.sourceforge.net/}{Count Lines of Code(CLOC)}. We know that by no means this can be used as a quality measurement, but we believe that it can give some structural insights and is a good starting point for an introduction of the technical area.
+We gathered some data of the state of Unplagged as of July 7th 2012 with the tool \href{http://cloc.sourceforge.net/}{Count Lines of Code(CLOC)}. We know that by no means this can be used as a quality measurement, but we believe that it can give some structural insights and is a good starting point for an introduction of the technical area.
 
 
 \begin{figure}[!h]
@@ -90,24 +90,29 @@ In all the following pie charts the measurements you will see are narrowed down 
   \label{fig:locDistribution}
 \end{figure}
 
-As you can see in figure \ref{fig:locDistribution} when looking at the legend, we are really standing on the shoulders of giants as is often said, with just about 2.1\% or a 50th of the whole PHP code written by us for example.
+As you can see when comparing the numbers in figure \ref{fig:locDistribution} with the table, we are really standing on the shoulders of giants as is often said, with just about 2.1\% of the whole PHP code written by us for example.
 
 \begin{figure}[!h]
   \centering
     \includegraphics[width=0.55\textwidth]{images/files.png}
-  \caption{Distribution of created files in Unplagged}
+  \caption{Distribution of self created files in Unplagged.}
   \label{fig:fileDistribution}
 \end{figure}
 
-For the main architecture of the system that lies in the PHP part, we also feel that the ratio of 125 files(see figure \ref{fig:fileDistribution}) to 9279 lines of code(see figure \ref{fig:locDistribution}) or ca. 75 lines of actual code per file is a pretty good achievement, as it is at least an indicator of a good software design. For JavaScript and CSS the numbers 
+What could be a bit misleading is the count of HTML files and lines, because they mostly contain some kind of mish-mash of PHP and HTML, including some simple loops to generate reccuring elements.
+
+For the main architecture of the system that lies in the PHP part, we feel that the ratio of 125 files(see figure \ref{fig:fileDistribution}) to 9279 lines of code(see figure \ref{fig:locDistribution}) or ca. 75 lines of actual code per file is a pretty good achievement, as it is at least an indicator of a good software design. For JavaScript and CSS the numbers 
 are not that great, but this happened mostly due to performance concerns, because it is 
 really desirable to reduce HTTP requests the client has to make.
+
+With comments it's even more complicated to judge the quality by pure numbers of lines,
+because they are just there and have no \enquote{understanding ratio} that could be easily measured, but to complete this short excursion into statistical territory: In figure \ref{fig:commentDistribution}, you can see the distribution of comments by language, with PHP again leading the pack by far.
 
 \begin{figure}[!h]
   \centering
     \includegraphics[width=0.55\textwidth]{images/comments.png}
-  \caption{Distribution of created files in Unplagged}
-  \label{fig:fileDistribution}
+  \caption{Distribution of comment lines by language.}
+  \label{fig:commentDistribution}
 \end{figure}
 
 \section{Licensing -- GPLv3}
@@ -123,7 +128,7 @@ under the same open source license.
 It has therefore the benefit of keeping the possibility to dual-license the system with another proprietary license later on in order to maybe even sell it to organizations who want to include
 customizations without making them public, which would be mandatory under the GPLv3.
 
-\section{Techniques and Technologies}
+\section{Project Structure and Technologies}
 
 Over the course of the project we integrated some kind of \enquote{toolbox} of libraries and frameworks, which 
 helped us develop faster, more efficient or according to some kind of \enquote{best-practices}
