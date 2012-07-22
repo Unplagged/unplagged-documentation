@@ -1,11 +1,11 @@
 \section{Notifications and Comments}
 
-The following section describes an important part for registered users, the notification system and the opportunity for adding comments basically on any resource in the system.
+The following section describes an important part of the application, especially for registered users, the notification system and the opportunity of adding comments basically to any resource in the system.
 
 \subsection{Recent activity stream}
-It displays the most recent events in the portal in the order they happened. Each activity (figure \ref{fig:activity-stream-single-activity}), one line in the stream, consists of 3 parts: meta information about the activity itself, information about the initiator and comments. The content of each of these parts is being determined automatically, when a new notification is being persisted to the database.
+It displays the most recent events in the portal in descending order they happened. Each activity (figure \ref{fig:activity-stream-single-activity}), one line in the stream, consists of 3 parts: meta information about the activity itself, information about the initiator and comments. The content of each of these parts is being determined automatically, when a new notification is being persisted to the database.
 
-Besides the initiator information and comments, each activity has an own title, description and icon. These meta information texts can be edited in the portal in the 'Administration' > 'Acions' section. Although it is not possible to remove them, because the action references are being used hard-coded within the system. That means a set of notifications is provided and can be ouput anywhere in the workflow.
+Besides the initiator information and comments, each activity has an own title, description and an icon. These meta information texts can be edited in the portal in the 'Administration' > 'Acions' section. A fixed set of notifcations is provided in the portal, they are editable but not removable.
 
 \begin{figure}[!h]
   \centering
@@ -22,11 +22,11 @@ The following code snippet shows, how to create a new notification when a new au
 Unplagged_Helper::notify("detection_report_created", $report, $report->getUser());
 \end{lstlisting}
 
-Unplagged does have an extensive role and permission management. Therefore the grant on each resource is being verified, before it is being displayed in the activity stream. Usually the resource related to the notification is the resource where the permission check is being performed on. Although in some cases, e.g. when rating a fragment, the resource will be the rating itself, but the permission check is done on the fragment. In this case the notify-method is being called with a fourth, optional parameter, another resource, in this case the fragment. When the user has access on the fragment, all ratings can be accessed as well, automatically.
+Unplagged does have an extensive role and permission management. Therefore the grant on each resource is verified, before it is displayed in the activity stream. Usually the resource related to the notification and the resource the permission check is performed on are the same. Although in some cases, e.g. when rating a fragment, the resource will be the rating itself, but the permission check is done on the fragment. In this case the notify-method is called with a fourth, optional parameter, another resource, in this case the fragment. When the user has access on the fragment, all ratings can be accessed as well, automatically and so are the notifcations.
 
 \subsection{Comments plugin}
 
-Comments are simply a small text related to a specific user and a resource. They can be used to share ideas on an object collaboratively. The most prominent part at Unplagged, where comments are being used, is the activity stream. A comment can be added by any user having access to the notification. 
+Comments are simply a small text related to a specific user and a resource. They can be used to share ideas on a content object collaboratively. The most prominent part at Unplagged, where comments are being used, is the activity stream. A comment can be added by any user having access to the notification. 
 
 \begin{figure}[!h]
   \centering
@@ -37,7 +37,7 @@ Comments are simply a small text related to a specific user and a resource. They
   \label{fig:creating-a-comment}
 \end{figure}
 
-For providing a better workflow to the user, the comments can be refreshed and added in place. That means, the position where the user scrolled to in the browser does not get affected. The in-place refreshing is being realized through AJAX. The comments container is being loaded empty and displaying a small loading image only. Not before the user clicks the 'show conversation' button, the comments are being fetched through a post request to the server. Whenever the result is being fetched completely, the spinner graphic is being hidden and the comments are being appended. The parsing of the comments markup is being done in Javascript as well. So the server requests are kept small and the server can return JSON only without any HTML.
+For providing a better workflow to the user, the comments can be refreshed and added in place. That means, the position where the user scrolled to in the browser does not get affected. The in-place refreshing is realized through AJAX. The comments container is loaded empty and displaying a small loading image only. Not before the user clicks the 'show conversation' button, the comments are being fetched through a post request to the server. Whenever the result is fetched completely, the spinner graphic is hidden and the comments are appended. The parsing of the comments markup is done in Javascript as well. So the server requests are kept small and the server can return JSON only without any HTML.
 
 \begin{lstlisting}[caption=Refreshing the comments of a resource]
 	target.show();

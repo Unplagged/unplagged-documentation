@@ -6,7 +6,7 @@ We were talking to 3 companies offering such a webservice: Docoloc, PlagScan and
 
 \subsection{PlagAware}
 
-PlagAware, a website for automatic plagairism detection is a commercial website which costs money depending on the amount of text to analyze. It figures out possible sources of the text handed in on their website and creates a PDF report with a list of all the found sources (figure \ref{fig:plagaware-result}).
+PlagAware, a website for automatic plagiarism detection is a commercial website which costs money depending on the amount of text to analyze. It figures out possible sources of the text handed in on their website and creates a PDF report with a list of all the sources found, as shown in figure \ref{fig:plagaware-result}.
 
 \begin{figure}[!h]
   \centering
@@ -17,7 +17,7 @@ PlagAware, a website for automatic plagairism detection is a commercial website 
   \label{fig:plagaware-result}
 \end{figure}
 
-The website also offers a webservice which takes text as input and notifies the user when the analyzing is finished. Although it does not provide any information about the sources through the webservice response call, there is only a status code and the percentage of plagairism responded. Whenever the response was sent, the user has to go to the PlagAware website and check out the detailed results there.
+The website also offers a webservice which takes text as input and notifies the user when the analyzing is finished. Although it does not provide any information about the sources through the webservice response call, there is only a status code and the percentage of plagiarism responded. Whenever the response has been sent, the user has to go to the PlagAware website and check out the detailed results there.
 
 Since the PlagAware webservice is a simple HTTP-Webservice, the connection is done through an HTTP request with curl.
 \begin{lstlisting}[caption=Sending a request through curl to the PlagAware webservice]
@@ -50,4 +50,4 @@ public function detect(Application_Model_Document_Page_DetectionReport &$report)
 }
 \end{lstlisting}
 
-The response is sent through a GET-Request to a pre-defined request URL, in our case '/document/response-plagiarism/report/<report-id>'. The call of this action stores the result in our database and creates a notifcation for the user, indicating that a new report is available.
+The response is sent through a GET-Request to a pre-defined request URL, in our case '/document/response-plagiarism/report/<report-id>'. The call of this action stores the response of the PlagAware webservice in our database and creates a notifcation for the user, indicating that a new report is available.
