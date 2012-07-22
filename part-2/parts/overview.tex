@@ -22,7 +22,7 @@ be set up with links to material (online and offline), comments on
 the papers, and as many navigational indices as possible.}\citep{projectDescription}
 \end{quote}
 
-In the beginning the main takeaways we took from this text were:
+In the beginning the main takeaways we used from this text were:
 
 \begin{itemize}
 \item \textbf{no} automated process, \enquote{just} a tool that aids the users workflow
@@ -39,13 +39,76 @@ One important information that was only stated during the first project proposal
 For the frontend this made the choices of languages and technologies pretty easy, because there are some clear web standards, without much alternatives aside from the version numbers. As we wanted to develop in a future-proof manner and chose to support only from Internet Explorer 8 upwards, this lead us to CSS3 for styling, HTML5 for the markup and JavaScript for client-side scripting. With JavaScript being the only one of those three with a real competitior in \href{http://www.dartlang.org/}{Googles Dart}, but as the browser support is still very weak, 
 this wasn't a possibility.
 
-On the server-side however the possibilities for a programming language and platforms are a little bit broader than this. The most
-important criterias for those choices were that it had to be very widespread and flexible, because for
-an open source project it's easier to gather a community with those kind of parameters. Naturally the familiarity and preferences of the team members also played a role here.
+On the server-side however the possibilities for programming languages and platforms are a little bit broader than this. The most
+important criterias for us regarding those choices were, that it had to be flexible and already very widespread, because this would be helpful for an open source project to gather a community later on.
+
+From the twenty most used programming languages according to \citet{tiobe} only PHP, Ruby, JavaScript(with \href{http://nodejs.org/}{Node.js}), Java and Python seemed really suitable for web development. Naturally the familiarity and preferences of the team members also played a role in the final decision. We made bad experiences with Java in this area and felt that structuring JavaScript and Python in a big application could be problematic. From the two
+languages that were left, the one we had the most experience with and that also has the 
+biggest following was PHP, so it made the final cut.
+
+For the \enquote{platform} we only made the decision to use Apache as the web server, because it is the most common\citep{webServers} and it also runs on many different operating systems, so that the real platform choice doesn't need to be made.
+
+As you will see below, the usage of a database was also made in a flexible way. We currently use MySQL, but it should be possible to swap the storage engine easily.
 
 \section{Statistics}
 
-To make an overview of the system a bit easier we gathered
+We gathered some data of the state of Unplagged as of 7th July 2012 with \href{http://cloc.sourceforge.net/}{Count Lines of Code(CLOC)}. We know that by no means this can be used as a quality measurement, but we believe that it can give some structural insights and is a good starting point for an introduction of the technical area.
+
+
+\begin{figure}[!h]
+  \centering
+\begin{tabular}{lrrr}
+\toprule
+Language & Files & Comments & Code \\
+\midrule
+PHP & 3262 & 275579    &     429308 \\
+XML & 194 & 0 & 234696 \\
+HTML                     &         2645       &     191     &     24684 \\
+CSS                      &         1220      &      843     &      7093 \\
+Javascript                & 59       &       1932     &      5239 \\
+XSD                      &           108     &         6       &    1058 \\
+SQL                    &        49        &     58      &      102 \\
+C                      &            18           &  16       &      72 \\
+make                  &                     4      &       4    &         13 \\
+\midrule
+Sum: & 4013 & 278629 & 702265 \\
+\bottomrule
+\end{tabular}
+  \caption{Complete measurements including library/framework files}
+  \label{tab:completeMeasure}
+\end{figure}
+
+The table in figure \ref{tab:completeMeasure} shows the complete(At least according to CLOC) count of files, comment lines and lines of code, that is currently part of Unplagged. It contains also all the code 
+that is part of all used libraries or frameworks.
+
+In all the following pie charts the measurements you will see are narrowed down as much as possible\footnote{CLOC was called with the following arguments: perl /cloc-1.56.pl application tests scripts public library/Unplagged --force-lang=html,phtml --exclude-dir=libs} to contain only code that was created by members of the team.
+
+\begin{figure}[!h]
+  \centering
+    \includegraphics[width=0.55\textwidth]{images/loc.png}
+  \caption{Distribution of created lines of code by language.}
+  \label{fig:locDistribution}
+\end{figure}
+
+As you can see in figure \ref{fig:locDistribution} when looking at the legend, we are really standing on the shoulders of giants as is often said, with just about 2.1\% or a 50th of the whole PHP code written by us for example.
+
+\begin{figure}[!h]
+  \centering
+    \includegraphics[width=0.55\textwidth]{images/files.png}
+  \caption{Distribution of created files in Unplagged}
+  \label{fig:fileDistribution}
+\end{figure}
+
+For the main architecture of the system that lies in the PHP part, we also feel that the ratio of 125 files(see figure \ref{fig:fileDistribution}) to 9279 lines of code(see figure \ref{fig:locDistribution}) or ca. 75 lines of actual code per file is a pretty good achievement, as it is at least an indicator of a good software design. For JavaScript and CSS the numbers 
+are not that great, but this happened mostly due to performance concerns, because it is 
+really desirable to reduce HTTP requests the client has to make.
+
+\begin{figure}[!h]
+  \centering
+    \includegraphics[width=0.55\textwidth]{images/comments.png}
+  \caption{Distribution of created files in Unplagged}
+  \label{fig:fileDistribution}
+\end{figure}
 
 \section{Licensing -- GPLv3}
 
