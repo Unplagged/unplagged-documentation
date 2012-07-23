@@ -78,7 +78,7 @@ Sum: & 4013 & 278629 & 702265 \\
   \label{tab:completeMeasure}
 \end{figure}
 
-The table in figure \ref{tab:completeMeasure} shows the complete(At least according to CLOC) count of files, comment lines and lines of code, that is currently part of Unplagged. It contains also all the code 
+The table in figure \ref{tab:completeMeasure} shows the complete(At least according to CLOC) count of files, comment lines and lines of code, that are currently part of Unplagged. It contains also all the code 
 that is part of all used libraries or frameworks.
 
 In all the following pie charts the measurements you will see are narrowed down as much as possible\footnote{CLOC was called with the following arguments: perl /cloc-1.56.pl application tests scripts public library/Unplagged --force-lang=html,phtml --exclude-dir=libs} to contain only code that was created by members of the team.
@@ -164,7 +164,7 @@ in some areas.
 The main directory structure you can see in figure \ref{fig:directoryStructure} is mostly like the one recommended by the Zend framework documentation\footnote{http://framework.zend.com/manual/en/project-structure.project.html}, which is a major building block of 
 Unplagged and the first thing we integrated.
 
-Most of the custom code that we wrote lies in the \texttt{application} directory and \texttt{libraries} contains nearly all the foreign code.
+Most of the custom code that we wrote lies in the \texttt{application} directory and \texttt{library} contains nearly all the foreign code.
 
 Public resources like CSS, JavaScript and some image files are all served from the \texttt{public/} directory, so the web server must be configured correctly to use this directory as the webroot. Every request that is made to the application is routed through the \texttt{index.php} file in this directory as well and then dispatched to Zend framework.
 
@@ -197,4 +197,4 @@ The problem with Bootstrap is, that webpages that use it tend to look very unifo
 
 \subsection{Responsive Design}
 
-Responsive Design isn't really a tool or framework like all the others, but more a paradigm regarding the way a webpage is styled via CSS. It means that CSS media queries are used to target specific viewport widths, so that no matter what device is used to view the application, the page always has an optimized layout.
+Responsive Design isn't really a tool or framework like all the others described here, but more a paradigm regarding the way a webpage is styled via CSS. It means that CSS media queries are used to target specific viewport widths, so that no matter what device is used to view the application, the page always has an optimized layout.
