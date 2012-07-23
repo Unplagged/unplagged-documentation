@@ -48,7 +48,7 @@ biggest following was PHP, so it made the final cut.
 
 For the \enquote{platform} we only made the decision to use Apache as the web server, because it is the most common\citep{webServers} and it also runs on many different operating systems, so that the real platform choice doesn't need to be made.
 
-As you will see below, the usage of a database was also made in a flexible way. We currently use MySQL, but it should be possible to swap the storage engine easily.
+As you will see below, the usage of a database was also made in a flexible way. We currently use MySQL, but it should be possible to swap the storage engine easily if necessary.
 
 \section{Statistics}
 
@@ -106,7 +106,7 @@ are not that great, but this happened mostly due to performance concerns, becaus
 really desirable to reduce HTTP requests the client has to make.
 
 With comments it's even more complicated to judge the quality by pure numbers of lines,
-because they are just there and have no \enquote{understanding ratio} that could be easily measured, but to complete this short excursion into statistical territory: In figure \ref{fig:commentDistribution}, you can see the distribution of comments by language, with PHP again leading the pack by far.
+because they are just there and have no \enquote{understanding ratio} of readers that could be easily measured, but to complete this short excursion into statistical territory: In figure \ref{fig:commentDistribution}, you can see the distribution of comments by language, with PHP again leading the pack by far.
 
 \begin{figure}[!h]
   \centering
@@ -126,28 +126,75 @@ character of it, so that any additions and changes to the software also need to 
 under the same open source license.
 
 It has therefore the benefit of keeping the possibility to dual-license the system with another proprietary license later on in order to maybe even sell it to organizations who want to include
-customizations without making them public, which would be mandatory under the GPLv3.
+customizations without making them public, which would be mandatory under the GPLv3, but making it freely available to others that operate under the specified terms.
 
 \section{Project Structure and Technologies}
 
-Over the course of the project we integrated some kind of \enquote{toolbox} of libraries and frameworks, which 
+Over the course of the project we integrated something that could be called \enquote{toolbox} of libraries and frameworks, which 
 helped us develop faster, more efficient or according to some kind of \enquote{best-practices}
-in some areas. 
+in some areas.
+
+\begin{figure}[!h]
+\dirtree{% 
+.1 unplagged/.
+.2 application/.
+.3 configs/.
+.3 controllers/.
+.3 forms/.
+.3 layouts/.
+.3 models/.
+.3 views/.
+.2 data/.
+.2 docs/.
+.2 library/.
+.2 public/.
+.3 images/.
+.3 js/.
+.3 style/.
+.3 index.php.
+.2 scripts/.
+.2 tests/.
+.2 gpl-3.0.txt.
+.2 readme.txt.
+}
+\caption{Most important directores of Unplagged}
+  \label{fig:directoryStructure}
+\end{figure}
+
+The main directory structure you can see in figure \ref{fig:directoryStructure} is mostly like the one recommended by the Zend framework documentation\footnote{http://framework.zend.com/manual/en/project-structure.project.html}, which is a major building block of 
+Unplagged and the first thing we integrated.
+
+Most of the custom code that we wrote lies in the \texttt{application} directory and \texttt{libraries} contains nearly all the foreign code.
+
+Public resources like CSS, JavaScript and some image files are all served from the \texttt{public/} directory, so the web server must be configured correctly to use this directory as the webroot. Every request that is made to the application is routed through the \texttt{index.php} file in this directory as well and then dispatched to Zend framework.
 
 \subsection{Zend Framework}
 
+Zend is a collection of PHP classes, that can be used in two different ways, first as a simple set of libraries, of which we for example made use for translating the application into different languages, creating webforms or for the rights management. But second, and more importantly, it also provides a framework for a MVC application, which automatically routes URLs according to a scheme into the correct controller classes.
+
+It has some competitors mainly in \href{http://cakephp.de/}{CakePHP}, but they essentially have the same features, so this choice was again more a matter of taste and experience.
+
 \subsection{Doctrine ORM}
+
+This can as well be used in different ways, but for our purposes, the most important bit was the possibility to write plain old PHP classes and annotate them in a way that maps them to database tables. Through this mechanism it is possible to generate the whole database by calling one simple script with the credentials of the database and have therefore flexibility regarding the used DBMS.
 
 \subsection{HTML5 Boilerplate}
 
+The HTML5 Boilerplate was the starting point for our front end development and is a pretty nice collection of best-practices mostly for CSS and HTML. It contains for example a CSS reset that tries to bring the default styles of all HTML elements for every browser to the same point, some basic CSS classes for image replacements or clearing floats and ways to target older browsers via specific CSS classes.
+
 \subsection{jQuery}
+
+Essentially all the JavaScript we wrote could be written without jQuery. The main benefit it brings though, is that it hides the differences between the JavaScript implementations of different browsers, so that coding gets much more comfortable and robust.
+
+Besides this, jQuery also provides a nice set of animations, that in some cases and if not used excessively, can help make the user interface a little nicer.
 
 \subsection{Twitter Bootstrap}
 
+Twitter Bootstrap is a set of mostly CSS components that was integrated very late, about six or seven month into the project, and replaced the buttons and error messages we already had built. This was primarily done because the usability of those elements had a much nicer flow and the browser compatibility was also more robust out of the box.
+Later on we also used it also on some more components like dialogs and the paging element.
+
+The problem with Bootstrap is, that webpages that use it tend to look very uniform, because of all the similar looking elements, but we made this choice here, because we felt that for a webapp the usability is more important than a unique design. And hopefully we also kept some uniqueness to it.
+
 \subsection{Responsive Design}
 
-\subsection{SIM}
-
-\subsection{Tesseract, Imagemagick and Ghostscript}
-
-
+Responsive Design isn't really a tool or framework like all the others, but more a paradigm regarding the way a webpage is styled via CSS. It means that CSS media queries are used to target specific viewport widths, so that no matter what device is used to view the application, the page always has an optimized layout.
