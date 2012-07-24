@@ -20,7 +20,7 @@ One of the first tasks will be collecting up the computing
 literature on the topic of plagiarism discovery. A wiki needs to 
 be set up with links to material (online and offline), comments on 
 the papers, and as many navigational indices as possible.}\citep{projectDescription}
-\end{quote}
+\end{quote}\label{cite:projectDescription}
 
 In the beginning the main takeaways we used from this text were:
 
@@ -103,7 +103,7 @@ What could be a bit misleading is the count of HTML files and lines, because the
 
 For the main architecture of the system that lies in the PHP part, we feel that the ratio of 125 files(see figure \ref{fig:fileDistribution}) to 9279 lines of code(see figure \ref{fig:locDistribution}) or ca. 75 lines of actual code per file is a pretty good achievement, as it is at least an indicator of a good software design. For JavaScript and CSS the numbers 
 are not that great, but this happened mostly due to performance concerns, because it is 
-really desirable to reduce HTTP requests the client has to make.
+really desirable to reduce HTTP requests the client has to make, which can be easily done by putting it all in very big files.
 
 With comments it's even more complicated to judge the quality by pure numbers of lines,
 because they are just there and have no \enquote{understanding ratio} of readers that could be easily measured, but to complete this short excursion into statistical territory: In figure \ref{fig:commentDistribution}, you can see the distribution of comments by language, with PHP again leading the pack by far.
