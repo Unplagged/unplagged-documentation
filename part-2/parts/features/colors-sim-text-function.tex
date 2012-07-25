@@ -1,0 +1,46 @@
+\subsubsection{Applying the color to the matched texts}
+
+For marking the color to the matched text passages in plagiarized and source documents, we used the HTML-<span>-tag to define in which text passage the color will be applied. The <span>-tag had a class-attribute named fragmark-x with x from 1-9 performing one of nine different colors. The CSS color attributes will applied to the text passage corresponding to the class name.
+
+This is the function to apply color to the text passage.
+
+\begin{lstlisting}[caption=Cropping an image to a square aspect ratio]
+private static function getMarkedTexts($comparedTexts, $wordsLeft, $wordsRight, &$listLeft, &$listRight){
+    // Colors have css classes "fragmark1" to "fragmark9"
+    $col = 0;
+    $nr_col = 9;
+    
+    for($i = 0; $i < sizeof($comparedTexts); $i++){
+      $res = $comparedTexts[$i];
+      $wordsLeft[$res[3]] = "<span class=\"fragmark-$col\">" . $wordsLeft[$res[3]];
+      $wordsLeft[$res[3] + $res[4] - 1] = $wordsLeft[$res[3] + $res[4] - 1] . "</span>";
+
+      $wordsRight[$res[1]] = "<span class=\"fragmark-$col\">" . $wordsRight[$res[1]];
+      $wordsRight[$res[1] + $res[4] - 1] = $wordsRight[$res[1] + $res[4] - 1] . "</span>";
+
+      $col = ($col + 1) % $nr_col;
+    }
+    
+    // At this point the text is exploded word by word, now the line breaks have to be added again, as in the original document
+    $resultLeft = Unplagged_CompareText::addLinebreaks($listLeft, $wordsLeft);
+    $resultRight = Unplagged_CompareText::addLinebreaks($listRight, $wordsRight);
+
+    return array("left"=>$resultLeft, "right"=>$resultRight);
+  }
+\end{lstlisting}
+
+And the CSS attributes
+
+\begin{lstlisting}[caption=Cropping an image to a square aspect ratio]
+/*colours for the simtext operation (compare function) to mark the same texts*/
+.fragmark-0 { background-color: #f5cf9f; }
+.fragmark-1 { background-color: #c2f598; }
+.fragmark-2 { background-color: #a7c6f2; }
+.fragmark-3 { background-color: #f29f9f; }
+.fragmark-4 { background-color: #aff2be; }
+.fragmark-5 { background-color: #e8a3ff; }
+.fragmark-6 { background-color: #e6e181; }
+.fragmark-7 { background-color: #b8b8ff; }
+.fragmark-8 { background-color: #f5cf9f; }
+.fragmark-9 { background-color: #a5e6ed; }
+\end{lstlisting}

@@ -85,3 +85,167 @@ After the evaluation text the list of approved fragments will be shown.
 
 At the end all the references to the found textsources is mentioned.
 
+\pagebreak
+
+\pagebreak
+
+\pagebreak
+
+\section{Simtext}
+Simtext is a common name about a tool which helps to check for text similarity between two inputs. This tool uses complex algorithm to compare the inputs. The result of the comparison is an output which should contain similar text passages between the two inputs and the positions of the text passages on the documents. 
+
+There are many softwares for text similarity tester, but at the beginning of the development for simtext in our workbench, we used the software SIM of Dick Grune. This software is free and the result after the comparison process is reliable. We integrated this software to Unplagged but there were some disadvantages about this software. Then we saw that the Vroniplag community had developed a simtext tool, which was also based on SIM, but cleverly modified in Javascript. This version was quite simplified and optimized for web browser. We would like to adapt this Javascript version in our workbench as well, but unfortunately it was not that easy to integrate it. The reason was that some of its functions were not suitable in our environment at all. Therefore we decided to modify this Javascript version in PHP. 
+
+Here are some descriptions about the development and improvement of simtext tool for our workbench.
+
+\subsection{SIM in C - Original version}
+The program was developed by Dick Grune. It was written in C and runnable in other languages like Java, Pascal… and had a quite complicated structure. 
+
+''The general outline of the similarity checker is as follows:
+
+
+\begin{enumerate}
+\item the files are read in (pass 1)
+\item a forward-reference table is prepared
+\item the set of interesting runs is determined
+\item the line numbers of the runs are determined (pass 2)
+\item the contents of the runs are printed in order (pass 3)''
+\end{enumerate}
+%\footnote{ftp://ftp.cs.vu.nl/pub/dick/similarity_tester/TechnReport - Date: 24.07.2012}
+
+The result of the comparison process was a plain text file which showed the similar text passages and the positions, where the plagiarized text was similar with the source text.
+
+We integrated this software into our workbench, but because it was not specifically developed for web, there were some disadvantages of this software. They are:
+
+\begin{itemize}
+\item it was complicated to run the program  - It had to be compiled through the C command 
+\item input/output were plain text files
+\item there was no color for marking the similar text passages
+\item only similar text passages were shown, not the whole documents
+\item the result was simple and monotone and not impressive
+\item In order to compare HTML texts or other file types, it  was maybe needed to parse the inputs in plain text files. After comparing, the result as plain text file should be parsed again in HTML so that it can be performed in the browser. Therefore the comparison process was complicated and the speed could be decreased if there were a lot of documents.
+\end{itemize}
+
+\begin{figure}[!h]
+  \centering
+  \fbox{
+    \includegraphics[width=0.97\textwidth]{images/SIM_Dick_Grune.png}
+  }
+  \caption{Simtext in C}
+  \label{fig:Sim_in_C}
+\end{figure}
+
+\subsection{Vroniplag’s Javascript version}
+We found out that Vroniplag also had its own text comparison tool, which was written in JavaScript. According to the author, this web-based version was also based on the original version of Dick Grune. % \footnote{http\://de.vroniplag.wikia.com/wiki/Benutzer\:Marcusb/Farbige\_Fragmente - Date\: 24.07.2012}
+
+The Javascript version could compare two fragments, finds out the similar text passages and marks them with different colors. A text passage is defined by default as a phrase which is more than 4 tokens (words) long.
+
+We thought this version was more flexible. Besides the text comparison function, it was also possible to mark the similar text passages with different colors. This could help the user get a better overview about the result. Because it was written in Javascript, it could also read the HTML texts and compare them directly without the parsing process as in the SIM version above. In addition, there was a button which could be switched on/off to show/hide the colors.
+
+But when we tried to adapt this version to our workbench, there were some difficulties that we thought the adaptation was too complicated. The difficulties were:
+\begin{itemize}
+\item Because Vroniplag is a Wiki-Community, so the version was written and adjusted to this Wiki’s environment. That means, the author has customized the version so that it fit to the Wiki page’s attributes. There were a lot of the author’s improvements and changes of relative functions only for the purpose that it could work in Wiki. Therefore it was not easy to adapt the version again in our workbench, because we did not have the suitable conditions as by Wiki
+\item If the user does not have/want Javascript turned-on on the browser, it would be difficult to see the colored result of the text comparison tool
+\item We wanted to make our own thing
+\end{itemize}
+
+\begin{figure}[!h]
+  \centering
+  \fbox{
+    \includegraphics[width=0.97\textwidth]{images/vroni_farbfrag.png}
+  }
+  \caption{Vroniplag Colored Fragments}
+  \label{fig:Vroniplag_Colored_Fragments}
+\end{figure}
+
+\subsection{Unplagged’s PHP version}
+After considering advantages and disadvantages of the two versions, we decided to modify the Javascript version in PHP language. Because of the disadvantage of the Wiki’s environment, we took only the main part of the Javascript version - the text compare function - and tried to modify it to our workbench.
+
+\input{parts/features/sim-text-function}
+
+\input{parts/features/disadvantages-sim-text-function}
+
+\input{parts/features/colors-sim-text-function}
+
+\subsection{Uses of text comparison function in Unplagged}
+The function text comparison was an important feature which was used much in many different sections in our workbench.
+
+\input{parts/features/fragment-form-simtext}
+
+\input{parts/features/fragment-show-simtext}
+
+\input{parts/features/many-docu-simtext}
+
+\pagebreak
+
+\section{Bibtex Metadata}
+
+Bibtex function was another feature in our workbench. Based on VroniPlag, Bibtex was created to provide the user an overview of the document's bibliographic information. The user had the possibility to add the bibtex information of a document through the document modify form when he created a new document. 
+
+In the document modify form there was an extra section for bibtex information. In this section, the bibtex modify form was first shown in its full form. There were over 20 fields in it. All of fields were taken from VroniPlag. The fields \textit{Author} and \textit{Title} must be filled, the field \textit{Year} could be filled as \textit{o.J (ohne Jahrgang)} if it was unknown.
+
+\begin{figure}[!h]
+  \centering
+  \fbox{
+    \includegraphics[width=0.97\textwidth]{images/bib_full.png}
+  }
+  \caption{Bibtex full form}
+  \label{fig:Bibtex_full_form}
+\end{figure}
+
+If the user wanted to specify a type for his document, there were also 3 separated subforms available:
+
+\begin{itemize}
+\item book
+\item periodical
+\item essay
+\end{itemize}
+
+\begin{figure}[!h]
+  \centering
+  \fbox{
+    \includegraphics[width=0.97\textwidth]{images/bib_book.png}
+  }
+  \caption{Bibtex book form}
+  \label{fig:Bibtex_book_form}
+\end{figure}
+
+\begin{figure}[!h]
+  \centering
+  \fbox{
+    \includegraphics[width=0.97\textwidth]{images/bib_essay.png}
+  }
+  \caption{Bibtex essay form}
+  \label{fig:Bibtex_essay_form}
+\end{figure}
+
+\begin{figure}[!h]
+  \centering
+  \fbox{
+    \includegraphics[width=0.97\textwidth]{images/bib_periodical.png}
+  }
+  \caption{Bibtex periodical form}
+  \label{fig:Bibtex_periodical_form}
+\end{figure}
+
+After saving bibtex information, the user could see it again by the tab Bibliography in Unplagged. By Bibliography, there was a list of all the documents with their bibtex information are shown. If the user would like to change something, he could choose the action button to come back to the document modify form.
+
+\begin{figure}[!h]
+  \centering
+  \fbox{
+    \includegraphics[width=0.97\textwidth]{images/bib_list.png}
+  }
+  \caption{Bibliography list}
+  \label{fig:Bibliography_list}
+\end{figure}
+
+If the user clicked on a bibtex link, he would see the details of the bibtex information of the document. More especially, to give the user an overview, that which fragments had belonged to this bibtex, a list of those fragments with the comparison and colors would also be shown here.
+
+\begin{figure}[!h]
+  \centering
+  \fbox{
+    \includegraphics[width=0.97\textwidth]{images/bib_frag_view.png}
+  }
+  \caption{view of bibtex information with fragments belong to it}
+  \label{fig:Bibliography_frag_view}
+\end{figure}
