@@ -1,0 +1,51 @@
+Date,Time in h,Description
+07/21/12,"3,0",Writing texts for technical poster
+07/21/12,"1,5",Rehearsing and preparing talk
+07/07/12,"0,75",Skype Meeting with Benjamin on posters and some other showtime stuff
+07/07/12,"3,0","Fixing small error message bugs, adding pages to active menu"
+07/06/12,"2,5",Writing for Technical Poster
+07/06/12,"1,0",Organizing lights for showtime
+06/30/12,"2,5","Adding additional staging area on server, debugging redirect form unplagged.com to preview.unplagged.com"
+06/28/12,"4,5",File area flow. Checkboxes for making public and adding to case right away. Changes to displaying of actions. Debugging not uploaded files.
+06/28/12,"2,3",Browser testing and CSS fixes for resposive tables
+06/25/12,"9,0","Bugfixing, translations, active menu state for subpages"
+06/25/12,"2,2",Wording of welcome message.
+06/22/12,"1,5",Skype Meeting with Benjamin on presentation planning and bugfixing effort
+06/22/12,"4,5","Small bugfixes, wording of error messages, translations"
+06/22/12,"1,0",Adding a published state to cases
+06/22/12,"1,5",Changes to homepage with barcode display
+06/19/12,"1,5",Refactoring initdirectories script to be inside the installer
+06/14/12,"4,5",Basics for Installer and splitting up config files
+06/14/12,"1,5",Refactoring js of contextmenu and file upload into plugins
+06/14/12,"2,0",Skype Meeting with Benjamin 14.06.12 on rights management
+06/04/12,"3,0",Translating and added logging of untranslated strings
+05/28/12,"1,0",Skype Meeting with Benjamin 25.05.12
+05/28/12,"0,3",Update to jQuery 1.7.2
+05/09/12,"1,3",Cleaning up of Bootstrap and other stuff
+05/09/12,"0,5",Skype with Benjamin
+05/09/12,"1,5","Changing 'title' of actions in dropdowns to 'label', so that a real title attribute can be set for tooltips."
+05/07/12,"1,2",Adding <noscript> and old browser messages and styling
+05/07/12,"1,4",Cleanup of files and some unused code parts
+05/06/12,"2,3",Tryout of Twitter bootstrap on new branch
+05/06/12,"2,3",Tryout of Twitter bootstrap on new branch
+05/06/12,"1,0",Automatic selection of language file
+05/06/12,"1,7",Update Modernizr and other HTML5 boilerplate stuff
+05/04/12,"1,0",Refactoring of getIconClass function into superclass and class constant
+05/04/12,"1,2","Adding Benjamins wishes for the responsive toolbar, i. e. the two dropdowns with same width and resizing"
+05/04/12,"1,6",Research for best practices in password hashing
+05/04/12,"1,5",Replacing old password hashing mechanism with phpass
+05/04/12,"1,3","Commenting and ""beautifying"" code"
+04/30/12,"0,5",Preparing tickets after Debbie Meeting
+04/27/12,"2,0",Editing tickets over the last weeks
+04/26/12,"0,5",Debugging not running Redmine(simple Apache restart did the trick)
+04/24/12,"1,5",Browser testing and small CSS fixes
+04/24/12,"0,8",Reading changes in jobs and build scripts.
+04/19/12,"1,0",Fixing local environment after Doctrine 2.2 update
+04/16/12,"1,3",Beginning styling buttons like in Chosen
+04/15/12,"1,3",Skype meeting with Benjamin about history storing and ACL
+04/15/12,"1,5",Fixing CSS bugs IE and Firefox(toolbar)
+04/12/12,"1,2",Prepared different layouts and extracted flash messages
+04/07/12,"2,0",CSS and HTML refactorings to make use of ARIA role attributes
+04/04/12,"2,2",Putting Javascript back at the bottom and testing afterwards.
+04/04/12,"0,8",Fighting with a login issue that actually wasn't one(deleted the db and a var\_dump() of the request mislead me)
+04/04/12,"1,2",Adding getPublishableName function to cases and some other small refactorings.
