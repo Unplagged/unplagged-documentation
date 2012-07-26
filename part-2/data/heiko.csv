@@ -1,23 +1,35 @@
-Date,Subject,Hours
-07/26/2012,"Preparing report for shipping (printing, binding) ",6
-07/25/2012,Documentation for Final Report,8
-07/23/2012,Documentation for Final Report,8
-07/20/2012,Documentation for Final Report,8
-07/26/2012,Skype Meeting 23.07.2012 \& 25.07.2012,1
-07/13/2012,Showtime,9
-07/06/2012,Meeting Showtime Preperation,2
-06/24/2012,"""Debbie Meeting"" 01.06.12",1
-06/24/2012,Skype Meeting 31.05.12,1
-05/23/2012,Filtering,10
-05/20/2012,Filtering,10
-05/18/2012,Filtering,8
-05/16/2012,Filtering,10
-05/15/2012,Filtering,5
-06/24/2012,Debbie Meeting 2012-05-14,1.5
-05/07/2012,Meeting 2012-05-07,3
-05/07/2012,Skype Meeting 3.05.12,1.3
-04/25/2012,Language FIle check,3
-04/25/2012,Team Meeting 23.04.12,3
-04/25/2012,Skype Meeting 20.04.12,2
-04/16/2012,Team Meeting  2012-04-16,3.5
-06/24/2012,Setting up latex document for Documentation 2.0,10
+Date,User,Subject,Hours
+05/12/2012,Heiko Stammel,Video creating for showtime,20
+07/26/2012,Heiko Stammel,"Preparing report for shipping (printing, binding) ",6
+07/25/2012,Heiko Stammel,Documentation for Final Report,8
+07/23/2012,Heiko Stammel,Documentation for Final Report,8
+07/20/2012,Heiko Stammel,Documentation for Final Report,8
+07/26/2012,Heiko Stammel,Skype Meeting 23.07.2012 \& 25.07.2012,1
+07/24/2012,Heiko Stammel,Skype Meeting 23.07.12,0.5
+07/13/2012,Heiko Stammel,Showtime,9
+07/19/2012,Heiko Stammel,Skype Meeting 19.07.2012,1
+07/20/2012,Heiko Stammel,meeting 11.07.2012 - preparation for showtime,3
+07/06/2012,Heiko Stammel,Meeting  Showtime Preperation,2
+07/06/2012,Heiko Stammel,Skype Meeting Showtime Vorbereitung,1
+06/22/2012,Heiko Stammel,Debbie Meeting 18.06.12 ,1.5
+06/24/2012,Heiko Stammel,"""Debbie Meeting"" 01.06.12",1
+06/24/2012,Heiko Stammel,Skype Meeting 31.05.12,1
+05/23/2012,Heiko Stammel,Filtering,10
+05/20/2012,Heiko Stammel,Filtering,10
+05/18/2012,Heiko Stammel,Filtering,8
+05/16/2012,Heiko Stammel,Filtering,10
+05/15/2012,Heiko Stammel,Filtering,5
+05/14/2012,Heiko Stammel,Starting detection report not working,10
+06/24/2012,Heiko Stammel,Debbie Meeting 2012-05-14,1.5
+05/08/2012,Heiko Stammel,"Concept for Help (context sensitiv, menu)",15
+05/07/2012,Heiko Stammel,Meeting 2012-05-07,3
+05/07/2012,Heiko Stammel,Skype Meeting 3.05.12,1.3
+04/27/2012,Heiko Stammel,Parsing single-page pdf is not working,10
+04/27/2012,Heiko Stammel,Language FIle check,10
+04/25/2012,Heiko Stammel,Language FIle check,3
+04/20/2012,Heiko Stammel,List CSS Bugs ,10
+04/25/2012,Heiko Stammel,Team Meeting 23.04.12,3
+04/25/2012,Heiko Stammel,Skype Meeting 20.04.12,2
+04/16/2012,Heiko Stammel,Team Meeting 2012-04-16,3.5
+06/24/2012,Heiko Stammel,Setting up latex document for Documentation 2.0,10
+04/14/2012,Heiko Stammel,Setting up latex document for Documentation 2.0,10
