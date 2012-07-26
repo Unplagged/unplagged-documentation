@@ -102,13 +102,13 @@ Before the start of the actual development of the report function, it was necess
 But there was another big disadvantage of \textit{dompdf}, it was not possible to represent the fragments in column form. It was only possible to show the fragments on the generated report among one another. This was a known problem of \textit{dompdf}.
 
 After a lot of tryings to code workarounds and make researches in forum, it was obvious that there was no way to make the column representing that we needed for the fragments view, that will be shown in the report, with the \textit{dompdf} framework. At the end it was necessary to make that not easy decision to pass on \textit{dompdf} and to find a framework that suits our needs better.
-So another research round was necessary this time we knew better what we were searching for. First of all a framework which can handle column representation.
+So another research round was necessary. This time we knew better what we were searching for. First of all a framework which can handle column representation.
 
 Because of this and some other reasons the report generating framework \textit{html2pdf} is used.
 
 \subsubsection{Html2pdf}
 
-\textit{Html2pdf} is the choosed framework for the report generation. The big advantage of \textit{html2pdf} was that it gives the possibility to show the fragments in column form. Another big advantage is that with \textit{html2pdf} it is possible to add svg to the generated pdf file. The svg possibility was necessary to add the barcode in the report which was generated as svg.
+\textit{Html2pdf} is the choosed framework for the report generation. The big advantage of \textit{html2pdf} was that it gives the possibility to show the fragments in column form. Another big advantage is that with \textit{html2pdf} it is possible to add svg code to the html content and therefor include it to the generated pdf file. The svg possibility was necessary to add the barcode in the report which was generated as svg.
 
 For the barcode generation of the report the following code is used.
 
@@ -131,7 +131,7 @@ The pagenumbers are written in the footer. The pagenumbers are generated with th
     }
 \end{lstlisting}
 
-The class use of \textit{html2pdf} is shown below.
+The use of \textit{html2pdf} class is shown below.
 
 \begin{lstlisting}[caption=Use of the class html2pdf]
         $html2pdf = new HTML2PDF('P', 'A4', 'en');
@@ -140,7 +140,7 @@ The class use of \textit{html2pdf} is shown below.
 
 The following code is a workaround. This workaround is necessary because \textit{html2pdf} has pagebreak problems. This problem was also found in \textit{dompdf}. This problem was not so easy to solve than thought at the beginning. The problem here is that  \textit{html2pdf} needs always proper and valid html content. From this content the pdf file will be generated. Valid html content means also that all html tags need to be closed. 
 
-For the coloured simtext passages span tags are used. This span tags contains the plagiarized text.If the content of the span tags are seperated in two or more pages than the span tag can not be closed within one page. Than for \textit{html2pdf} it is not valid html anymore and \textit{html2pdf} refuses to generate the pdf file.
+For the coloured simtext passages span tags are used. This span tags contains the plagiarized text. If the content of the span tags are seperated in two or more pages than the span tag can not be closed within one page. This means for \textit{html2pdf} it is not valid html anymore and \textit{html2pdf} refuses to generate the pdf file.
 
 The workaround limits the words which will be written in one page of 400 words, if there is a span tag which is not closed it will be closed then.
 
@@ -218,7 +218,7 @@ The workaround limits the words which will be written in one page of 400 words, 
 
 \subsection{Outlook of a report}
 
-The report has besides his first page, three further parts. The evaluation text, the list of approved fragments and the references to the according sources.
+The report has besides his first page, three further parts. The defaulttext with the evaluationtext, the list of approved fragments and the references to the according sources.
 
 \begin{figure}[!h]
   \centering
@@ -231,7 +231,7 @@ The report has besides his first page, three further parts. The evaluation text,
 
 \pagebreak
 
-The defaulttext also can contain evalutiontext, this is individual text which was given from the person who generated the report through the report form.
+The defaulttext also can contain evaluationtext, this is individual text which was given from the person who generated the report, through the report form.
 \pagebreak
 
 Below there is an example of the defaulttext.
