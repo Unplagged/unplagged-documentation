@@ -5,7 +5,7 @@
 \input{parts/features/fragments}
 
 \section{User avatar}
-With the `User avatar' the user gets the possibility to upload a picture to his own profile. Through the function `Profil edititieren'  the user gets to the `Profil editieren' form. 
+With the `User avatar' the user gets the possibility to upload a picture to his own profile. Through the function \textit{Profil edititieren}  the user gets to the \textit{Profil editieren} form. 
 \pagebreak
 
 \begin{figure}[!h]
@@ -30,6 +30,19 @@ The uploader in this form allows the user to upload a picture as his avatar.
   \label{fig:profil_editieren_uploader}
 \end{figure}
 
+\pagebreak
+
+After the avatar picture is uploaded the profile picture will be changed.
+
+\begin{figure}[!h]
+  \centering
+  \fbox{
+    \includegraphics[width=0.97\textwidth]{images/profil_editieren_avatar.png}
+  }
+  \caption{profile avatar picture}
+  \label{fig:profil_editieren_avatar}
+\end{figure}
+
 
 \input{parts/features/avatar}
 
@@ -39,27 +52,173 @@ The uploader in this form allows the user to upload a picture as his avatar.
 
 \input{parts/features/barcode}
 
+\pagebreak
+
 \section{Report}
 
-The report is needed to collect and document all the found plagiarized fragments of the reviewed document. It will be used as an evidence proof.
+The report is needed to collect and document all the found plagiarized fragments of the reviewed document. It will be used as an evidence to proof (major) plagiarism.
 The report documents all founded plagiarized parts including the corresponding sources.
 
-The report has also a barcode on the first page to give the reader a quick visuell overview to the plagiarization level of the reviewed document.
+The report has also a barcode on the first page to give the reader a quick visuell overview to the plagiarism level of the reviewed document.
 
-Below you can see the generation and the outlook of an example of a report.
+Below you can read about the generation of a report, a short description of the development and the outlook of an example of a report.
 
-\subsection{Generating of a Report}
+\subsection{Generating of a report}
 
 To generate a report it is neccessary that there exist approved fragments for this case. Without approved fragments in a case it is not possible to generate a report for this case. 
 This is made to have only approved fragments listed in the report. This makes sure that only real plagiarized textparts are listed in the report.
 
-To generate a report the user needs to choose the tab `Berichte' and than click at the button `Bericht erstellen'. After the user clicked at the  button `Bericht erstellen' it has the possibility to fill up the report form to give the title of the report and to give some evaluations about the reviewed document.
+To generate a report the user needs to choose the tab \textit{Berichte} and than click at the button \textit{Bericht erstellen}. After the user clicked at the  button \textit{Bericht erstellen} it has the possibility to fill up the report form to give the title of the report and to give some evaluations about the reviewed document.
 
-After the user saved the entries of the form the report will be generated and the report will be listed.
+\begin{figure}[!h]
+  \centering
+  \fbox{
+    \includegraphics[width=0.97\textwidth]{images/report_form.jpg}
+  }
+  \caption{report form}
+  \label{fig:report_form}
+\end{figure}
 
-\subsection{Outlook of a Report}
+\pagebreak
 
-The report has besides his first page, three different parts. The evaluation text, the list of approved fragments and the references to the sources.
+After the user saved the entries of the form the report will be generated and will be listed.
+
+\begin{figure}[!h]
+  \centering
+  \fbox{
+    \includegraphics[width=0.97\textwidth]{images/report_list.png}
+  }
+  \caption{example of a listed report}
+  \label{fig:report_list}
+\end{figure}
+
+\subsection{The developing of the report function}
+
+Before the start of the actual development of the report function, it was necessary to first make researches about pdf generation frameworks. After some researches and hints from unplagged group members the decision felt to \textit{dompdf}. 
+
+\subsubsection{Dompdf}
+
+\textit{Dompdf} is an easy to use framework which gives users the posibility to generate pfd files dynamically. After the familiarisation phase it was not difficult to use this framework to generate the first report in pdf form. \textit{Dompdf} had problems with pagebreaks. Reasons were for example that it could not handle it if the content between two \textit{div tags} or a \textit{table cell} was longer than one page.
+But there was another big disadvantage of \textit{dompdf}, it was not possible to represent the fragments in column form. It was only possible to show the fragments on the generated report among one another. This was a known problem of \textit{dompdf}.
+
+After a lot of tryings to code workarounds and make researches in forum, it was obvious that there was no way to make the column representing that we needed for the fragments view, that will be shown in the report, with the \textit{dompdf} framework. At the end it was necessary to make that not easy decision to pass on \textit{dompdf} and to find a framework that suits our needs better.
+So another research round was necessary this time we knew better what we were searching for. First of all a framework which can handle column representation.
+
+Because of this and some other reasons the report generating framework \textit{html2pdf} is used.
+
+\subsubsection{Html2pdf}
+
+\textit{Html2pdf} is the choosed framework for the report generation. The big advantage of \textit{html2pdf} was that it gives the possibility to show the fragments in column form. Another big advantage is that with \textit{html2pdf} it is possible to add svg to the generated pdf file. The svg possibility was necessary to add the barcode in the report which was generated as svg.
+
+For the barcode generation of the report the following code is used.
+
+\begin{lstlisting}[caption=Generating the barcode for the report]
+  private function getBarCode($case) {
+        $str_svg = $case->getBarcode(80, 150, 100, false, '%')->render();
+        $str_svg = str_replace('svg', 'draw', $str_svg);
+        $str_svg = str_replace('width=', 'w=', $str_svg);
+        $str_svg = str_replace('height=', 'h=', $str_svg);
+
+        return "<h2>Barcode</h2>" . $str_svg;
+    }
+\end{lstlisting}
+
+The pagenumbers are written in the footer. The pagenumbers are generated with the following code.
+
+\begin{lstlisting}[caption=Generating the pagenumbers]
+    private function getFooter($pagenumber) {
+        return "<page_footer>" . $pagenumber . "/%pagenumber%</page_footer> ";
+    }
+\end{lstlisting}
+
+The class use of \textit{html2pdf} is shown below.
+
+\begin{lstlisting}[caption=Use of the class html2pdf]
+        $html2pdf = new HTML2PDF('P', 'A4', 'en');
+        $html2pdf->WriteHTML($content);
+\end{lstlisting}
+
+The following code is a workaround. This workaround is necessary because \textit{html2pdf} has pagebreak problems. This problem was also found in \textit{dompdf}. This problem was not so easy to solve than thought at the beginning. The problem here is that  \textit{html2pdf} needs always proper and valid html content. From this content the pdf file will be generated. Valid html content means also that all html tags need to be closed. 
+
+For the coloured simtext passages span tags are used. This span tags contains the plagiarized text.If the content of the span tags are seperated in two or more pages than the span tag can not be closed within one page. Than for \textit{html2pdf} it is not valid html anymore and \textit{html2pdf} refuses to generate the pdf file.
+
+The workaround limits the words which will be written in one page of 400 words, if there is a span tag which is not closed it will be closed then.
+
+\begin{lstlisting}[caption=Workaround for the \textit{html2pdf} pagebreak problem]
+   /**
+     * Removes the multiple blank spaces from the given parameter.
+     */
+    private function remove_spaces($text) {
+        while (true) {
+            $replaced = str_replace('  ', ' ', $text);
+            if ($replaced != $text) {
+                $text = $replaced;
+            } else {
+                break;
+            }
+        }
+        return $text;
+    }
+
+ /**
+     * Cuts the given text into an array, which each element contains
+     * $nbWordsProPage words.
+     */
+    private function cut_text_into_pages($text) {
+        $text = $this->remove_spaces($text);
+        $exploded = array_slice(explode(' ', $text), 0);
+        $nbWordsProPage = 400;
+        $nbPage = 0;
+        $pages = array();
+        $rest = "";
+        $nbRest = 0;
+
+        for ($i = 0; $i < sizeof($exploded); $i+=$nbWordsProPage) {
+            $page = $rest . implode(' ', array_slice($exploded, $i, $nbWordsProPage - $nbRest));
+            $result = $this->check($page);
+            $rest = $result["toRetrieve"] . " ";
+            $nbRest = str_word_count($rest);
+            $pages[$nbPage++] = $result["s"];
+        }
+
+        return $pages;
+    }
+
+    private function result($length, $s) {
+        $array = array();
+        $array["toRetrieve"] = substr($s, $length, strlen($s) - $length);
+        $array["s"] = substr($s, 0, $length);
+        $array["original"] = $s;
+        return $array;
+    }
+
+    private function check($s) {
+        $nbST = substr_count($s, ST);
+        $nbBT = substr_count($s, GT);
+        if ($nbST == $nbBT) {
+            $nbSpanOpen = substr_count($s, SPAN_OPEN);
+            $nbSpanClose = substr_count($s, SPAN_CLOSE);
+            if ($nbSpanOpen == $nbSpanClose) {
+                return $this->result(strlen($s), $s);
+            } else {
+                // 'halli hallo <span>'
+                return $this->result(strrpos($s, SPAN_OPEN), $s);
+            }
+        } else {
+            // one tag is not closed
+            //'halli hallofff <span></span'
+            //'halli hallofff <span'
+            $nbSpanOpen = substr_count($s, SPAN_OPEN);
+            $nbSpanClose = substr_count($s, SPAN_CLOSE);
+
+            return $this->result(strrpos($s, SPAN_OPEN), $s);
+        }
+    }
+\end{lstlisting}
+
+\subsection{Outlook of a report}
+
+The report has besides his first page, three further parts. The evaluation text, the list of approved fragments and the references to the according sources.
 
 \begin{figure}[!h]
   \centering
@@ -70,7 +229,22 @@ The report has besides his first page, three different parts. The evaluation tex
   \label{fig:report_deckblatt}
 \end{figure}
 
-The evaluation text is individual text which was given from the person who generated the report through the report form.
+\pagebreak
+
+The defaulttext also can contain evalutiontext, this is individual text which was given from the person who generated the report through the report form.
+\pagebreak
+
+Below there is an example of the defaulttext.
+
+\begin{figure}[!h]
+  \centering
+  \fbox{
+    \includegraphics[width=0.97\textwidth]{images/report_default_evaluation_text.jpg}
+  }
+  \caption{report defaulttext}
+  \label{fig:report_default_evaluation_tex}
+\end{figure}
+\pagebreak
 
 After the evaluation text the list of approved fragments will be shown.
 
@@ -83,11 +257,17 @@ After the evaluation text the list of approved fragments will be shown.
   \label{fig:report_fragment}
 \end{figure}
 
-At the end all the references to the found textsources is mentioned.
-
 \pagebreak
+At the end all the references to the found sources are mentioned.
 
-\pagebreak
+\begin{figure}[!h]
+  \centering
+  \fbox{
+    \includegraphics[width=0.97\textwidth]{images/report_according_sources.jpg}
+  }
+  \caption{example of a listed source}
+  \label{fig:report_according_sources}
+\end{figure}
 
 \pagebreak
 
