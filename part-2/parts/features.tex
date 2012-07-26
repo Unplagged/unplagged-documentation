@@ -98,7 +98,7 @@ Before the start of the actual development of the report function, it was necess
 
 \subsubsection{Dompdf}
 
-\textit{Dompdf} is an easy to use framework which gives users the posibility to generate pfd files dynamically. After the familiarisation phase it was not difficult to use this framework to generate the first report in pdf form. \textit{Dompdf} had problems with pagebreaks. Reasons were for example that it could not handle it if the content between two \textit{div tags} or a \textit{table cell} was longer than one page.
+ \href{http://code.google.com/p/dompdf/}{Dompdf} is an easy to use framework which gives users the posibility to generate pfd files dynamically. After the familiarisation phase it was not difficult to use this framework to generate the first report in pdf form. \textit{Dompdf} had problems with pagebreaks. Reasons were for example that it could not handle it if the content between two \textit{div tags} or a \textit{table cell} was longer than one page.
 But there was another big disadvantage of \textit{dompdf}, it was not possible to represent the fragments in column form. It was only possible to show the fragments on the generated report among one another. This was a known problem of \textit{dompdf}.
 
 After a lot of tryings to code workarounds and make researches in forum, it was obvious that there was no way to make the column representing that we needed for the fragments view, that will be shown in the report, with the \textit{dompdf} framework. At the end it was necessary to make that not easy decision to pass on \textit{dompdf} and to find a framework that suits our needs better.
@@ -108,7 +108,7 @@ Because of this and some other reasons the report generating framework \textit{h
 
 \subsubsection{Html2pdf}
 
-\textit{Html2pdf} is the choosed framework for the report generation. The big advantage of \textit{html2pdf} was that it gives the possibility to show the fragments in column form. Another big advantage is that with \textit{html2pdf} it is possible to add svg code to the html content and therefor include it to the generated pdf file. The svg possibility was necessary to add the barcode in the report which was generated as svg.
+\href{http://html2fpdf.sourceforge.net/}{Html2pdf} is the choosed framework for the report generation. The big advantage of \textit{html2pdf} was that it gives the possibility to show the fragments in column form. Another big advantage is that with \textit{html2pdf} it is possible to add svg code to the html content and therefor include it to the generated pdf file. The svg possibility was necessary to add the barcode in the report which was generated as svg.
 
 For the barcode generation of the report the following code is used.
 
