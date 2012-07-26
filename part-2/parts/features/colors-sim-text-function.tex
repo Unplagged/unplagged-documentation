@@ -1,10 +1,10 @@
 \subsubsection{Applying the color to the matched texts}
 
-For marking the color to the matched text passages in plagiarized and source documents, we used the HTML-<span>-tag to define in which text passage the color will be applied. The <span>-tag had a class-attribute named fragmark-x with x from 1-9 performing one of nine different colors. The CSS color attributes will applied to the text passage corresponding to the class name.
+For marking the color to the matched text passages in plagiarized and source documents, we used the HTML \textit{<span>}-tag to define in which text passage the color will be applied. The \textit{<span>}-tag had a class-attribute named \textit{fragmark-x} with \textit{x} from \textit{1-9} performing one of nine different colors. The CSS color attributes will applied to the text passage corresponding to the class name.
 
 This is the function to apply color to the text passage.
 
-\begin{lstlisting}[caption=Cropping an image to a square aspect ratio]
+\begin{lstlisting}
 private static function getMarkedTexts($comparedTexts, $wordsLeft, $wordsRight, &$listLeft, &$listRight){
     // Colors have css classes "fragmark1" to "fragmark9"
     $col = 0;
@@ -31,7 +31,7 @@ private static function getMarkedTexts($comparedTexts, $wordsLeft, $wordsRight, 
 
 And the CSS attributes
 
-\begin{lstlisting}[caption=Cropping an image to a square aspect ratio]
+\begin{lstlisting}
 /*colours for the simtext operation (compare function) to mark the same texts*/
 .fragmark-0 { background-color: #f5cf9f; }
 .fragmark-1 { background-color: #c2f598; }

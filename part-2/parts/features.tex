@@ -5,7 +5,7 @@
 \input{parts/features/fragments}
 
 \section{User avatar}
-With the `User avatar' the user gets the possibility to upload a picture to his own profile. Through the function \textit{Profil edititieren}  the user gets to the \textit{Profil editieren} form. 
+With the ''User avatar'' the user has the possibility to upload a picture to his own profile. Through the function \textit{Profil edititieren}  the user can get to the \textit{Profil editieren} form. 
 \pagebreak
 
 \begin{figure}[!h]
@@ -57,18 +57,18 @@ After the avatar picture is uploaded the profile picture will be changed.
 \section{Report}
 
 The report is needed to collect and document all the found plagiarized fragments of the reviewed document. It will be used as an evidence to proof (major) plagiarism.
-The report documents all founded plagiarized parts including the corresponding sources.
+The report documents all founded plagiarized parts including their corresponding sources.
 
 The report has also a barcode on the first page to give the reader a quick visuell overview to the plagiarism level of the reviewed document.
 
 Below you can read about the generation of a report, a short description of the development and the outlook of an example of a report.
 
-\subsection{Generating of a report}
+\subsection{Generation of a report}
 
 To generate a report it is neccessary that there exist approved fragments for this case. Without approved fragments in a case it is not possible to generate a report for this case. 
-This is made to have only approved fragments listed in the report. This makes sure that only real plagiarized textparts are listed in the report.
+This is made to have only approved fragments listed in the report. This makes sure that only real plagiarized text parts are listed in the report.
 
-To generate a report the user needs to choose the tab \textit{Berichte} and than click at the button \textit{Bericht erstellen}. After the user clicked at the  button \textit{Bericht erstellen} it has the possibility to fill up the report form to give the title of the report and to give some evaluations about the reviewed document.
+To generate a report the user needs to choose the tab \textit{Berichte} and than clicks at the button \textit{Bericht erstellen}. After the user clicked at the  button \textit{Bericht erstellen}, he has the possibility to fill up the report form to give the title of the report and to give some evaluations about the reviewed document.
 
 \begin{figure}[!h]
   \centering
@@ -81,7 +81,7 @@ To generate a report the user needs to choose the tab \textit{Berichte} and than
 
 \pagebreak
 
-After the user saved the entries of the form the report will be generated and will be listed.
+After saving the form, the report will be generated and will be listed.
 
 \begin{figure}[!h]
   \centering
@@ -94,23 +94,23 @@ After the user saved the entries of the form the report will be generated and wi
 
 \subsection{The developing of the report function}
 
-Before the start of the actual development of the report function, it was necessary to first make researches about pdf generation frameworks. After some researches and hints from unplagged group members the decision felt to \textit{dompdf}. 
+Before starting to develope the report function, it was necessary to make researches about PDF's generation frameworks. After some researches and hints from Unplagged's group members the decision felt to \textit{dompdf}. 
 
-\subsubsection{Dompdf}
+\subsubsection{dompdf}
 
- \href{http://code.google.com/p/dompdf/}{Dompdf} is an easy to use framework which gives users the posibility to generate pfd files dynamically. After the familiarisation phase it was not difficult to use this framework to generate the first report in pdf form. \textit{Dompdf} had problems with pagebreaks. Reasons were for example that it could not handle it if the content between two \textit{div tags} or a \textit{table cell} was longer than one page.
-But there was another big disadvantage of \textit{dompdf}, it was not possible to represent the fragments in column form. It was only possible to show the fragments on the generated report among one another. This was a known problem of \textit{dompdf}.
+ \href{http://code.google.com/p/dompdf/}{dompdf} is an easy to use framework which gives users the posibility to generate PDF files dynamically. After the familiarisation phase, it was not difficult to use this framework to generate the first report in PDF form. But \textit{dompdf} had problems with pagebreaks. The reasons were for example that it could not handle it if the content between two \textit{div tags} or a \textit{table cell} was longer than one page.
+And there was another big disadvantage of \textit{dompdf}, it was not possible to represent the fragments in column format. It was only possible to show the fragments among one another in the generated report. It was a known problem of \textit{dompdf}.
 
-After a lot of tryings to code workarounds and make researches in forum, it was obvious that there was no way to make the column representing that we needed for the fragments view, that will be shown in the report, with the \textit{dompdf} framework. At the end it was necessary to make that not easy decision to pass on \textit{dompdf} and to find a framework that suits our needs better.
-So another research round was necessary. This time we knew better what we were searching for. First of all a framework which can handle column representation.
+After a lot of tryings to code workarounds and researches in forums, it was obvious that there was no way to make the column representing what we needed for the fragments view or what will be shown in the report, with the \textit{dompdf} framework. At the end we had to make that not easy decision to pass on \textit{dompdf} and to find another framework that suits our needs better.
+So we had to research again. But this time we knew better what we were searching for - First of all a framework which can handle column representation.
 
-Because of this and some other reasons the report generating framework \textit{html2pdf} is used.
+Because of this and some other reasons the report generating framework \textit{HTML2PDF} was used.
 
-\subsubsection{Html2pdf}
+\subsubsection{HTML2PDF}
 
-\href{http://html2fpdf.sourceforge.net/}{Html2pdf} is the choosed framework for the report generation. The big advantage of \textit{html2pdf} was that it gives the possibility to show the fragments in column form. Another big advantage is that with \textit{html2pdf} it is possible to add svg code to the html content and therefor include it to the generated pdf file. The svg possibility was necessary to add the barcode in the report which was generated as svg.
+\href{http://html2fpdf.sourceforge.net/}{HTML2PDF} is the framework chosen for the report generation. The big advantage of \textit{HTML2PDF} is that it is possible to show the fragments in column format. Another big advantage is that with \textit{HTML2PDF} it is possible to add SVG code to the HTML content and therefore we were able to include it to the generated PDF file. The possibility of adding SVG was necessary because we could add the barcode, which was generated as SVG, to the report .
 
-For the barcode generation of the report the following code is used.
+For the barcode generation of the report the following code was used.
 
 \begin{lstlisting}[caption=Generating the barcode for the report]
   private function getBarCode($case) {
@@ -123,7 +123,7 @@ For the barcode generation of the report the following code is used.
     }
 \end{lstlisting}
 
-The pagenumbers are written in the footer. The pagenumbers are generated with the following code.
+The page number was written in the footer. The page number was generated with the following code.
 
 \begin{lstlisting}[caption=Generating the pagenumbers]
     private function getFooter($pagenumber) {
@@ -131,18 +131,18 @@ The pagenumbers are written in the footer. The pagenumbers are generated with th
     }
 \end{lstlisting}
 
-The use of \textit{html2pdf} class is shown below.
+The \textit{HTML2PDF} class' call is shown below.
 
 \begin{lstlisting}[caption=Use of the class html2pdf]
         $html2pdf = new HTML2PDF('P', 'A4', 'en');
         $html2pdf->WriteHTML($content);
 \end{lstlisting}
 
-The following code is a workaround. This workaround is necessary because \textit{html2pdf} has pagebreak problems. This problem was also found in \textit{dompdf}. This problem was not so easy to solve than thought at the beginning. The problem here is that  \textit{html2pdf} needs always proper and valid html content. From this content the pdf file will be generated. Valid html content means also that all html tags need to be closed. 
+The following code was a workaround. This workaround was necessary because \textit{HTML2PDF} had also pagebreak problems as \textit{dompdf}. This problem was not so easy to solve as we thought at the beginning. The problem was that  \textit{HTML2PDF} needs always proper and valid HTML content to generate the PDF file. Valid HTML content means that all HTML tags need to be closed. 
 
-For the coloured simtext passages span tags are used. This span tags contains the plagiarized text. If the content of the span tags are seperated in two or more pages than the span tag can not be closed within one page. This means for \textit{html2pdf} it is not valid html anymore and \textit{html2pdf} refuses to generate the pdf file.
+For example, \textit{span}-tags were used for the coloured simtext passages. This \textit{span}-tag contained the plagiarized text. If the content of the \textit{span}-tags were seperated in two or more pages, the \textit{span}-tag could not be closed within one page. This means it was for \textit{HTML2PDF} not a valid HTML anymore and \textit{HTML2PDF} refused to generate the PDF file.
 
-The workaround limits the words which will be written in one page of 400 words, if there is a span tag which is not closed it will be closed then.
+The workaround limited 400 words, that was the number of words which could be written in one page. So that if there was a \textit{span}-tag which was not closed in a page, it would be closed with the following code.
 
 \begin{lstlisting}[caption=Workaround for the \textit{html2pdf} pagebreak problem]
    /**
@@ -218,7 +218,7 @@ The workaround limits the words which will be written in one page of 400 words, 
 
 \subsection{Outlook of a report}
 
-The report has besides his first page, three further parts. The defaulttext with the evaluationtext, the list of approved fragments and the references to the according sources.
+The report had besides its first page three further parts: The default text with the evaluation text, the list of approved fragments and the references to the corresponding sources.
 
 \begin{figure}[!h]
   \centering
@@ -231,10 +231,10 @@ The report has besides his first page, three further parts. The defaulttext with
 
 \pagebreak
 
-The defaulttext also can contain evaluationtext, this is individual text which was given from the person who generated the report, through the report form.
+The default text contained evaluation text. The evaluation text was individual text which was given from the person, who generated the report, through the report modify form.
 \pagebreak
 
-Below there is an example of the defaulttext.
+Below there is an example of the default text.
 
 \begin{figure}[!h]
   \centering
@@ -246,7 +246,7 @@ Below there is an example of the defaulttext.
 \end{figure}
 \pagebreak
 
-After the evaluation text the list of approved fragments will be shown.
+After the evaluation text, the list of approved fragments will be shown.  (see figure \ref{fig:report_fragment})
 
 \begin{figure}[!h]
   \centering
@@ -258,7 +258,7 @@ After the evaluation text the list of approved fragments will be shown.
 \end{figure}
 
 \pagebreak
-At the end all the references to the found sources are mentioned.
+At the end, all the references to the found sources are mentioned.
 
 \begin{figure}[!h]
   \centering
@@ -269,8 +269,6 @@ At the end all the references to the found sources are mentioned.
   \label{fig:report_according_sources}
 \end{figure}
 
-\pagebreak
-
 \section{Simtext}
 Simtext is a common name about a tool which helps to check for text similarity between two inputs. This tool uses a complex algorithm to compare the inputs. The result of the comparison is an output which should contain similar text passages between the two inputs and the positions of the similar text passages on the documents. 
 
@@ -279,9 +277,9 @@ There are many softwares for text similarity tester, but at the beginning of the
 Here are some descriptions about the development and improvement of the simtext tool for our workbench.
 
 \subsection{SIM in C - Original version}
-The program was developed by Dick Grune. It was written in C and runnable in other languages like Java, Pascal etc. and had a quite complicated structure. 
+The program was developed by Dick Grune. It was written in C and runnable in other languages like Java, Pascal etc. and had a quite complicated structure.
 
-''The general outline of the similarity checker is as follows:
+''The general outline of the similarity checker is as follows:  \footnote{ftp://ftp.cs.vu.nl/pub/dick/similarity\_tester/TechnReport}
 
 
 \begin{enumerate}
@@ -291,7 +289,7 @@ The program was developed by Dick Grune. It was written in C and runnable in oth
 \item the line numbers of the runs are determined (pass 2)
 \item the contents of the runs are printed in order (pass 3)''
 \end{enumerate}
-%\footnote{ftp://ftp.cs.vu.nl/pub/dick/similarity_tester/TechnReport - Date: 24.07.2012}
+
 
 The result of the comparison process was a plain text file which showed the similar text passages and the positions, where the plagiarized text was similar with the source text.
 
@@ -302,7 +300,7 @@ We integrated this software into our workbench, but because it was not specifica
 \item input/output were plain text files
 \item there was no color for marking the similar text passages
 \item only similar text passages were shown, not the whole documents
-\item the result was simple and monotone and not impressive
+\item the result was simple, monotone and not impressive
 \item In order to compare HTML texts or other file types, it  was maybe needed to parse the inputs in plain text files. After comparing, the result as plain text file should be parsed again in HTML so that it can be shown in the browser. Therefore the comparison process was complicated and the speed could be decreased if there were a lot of documents.
 \end{itemize}
 
@@ -316,7 +314,7 @@ We integrated this software into our workbench, but because it was not specifica
 \end{figure}
 
 \subsection{Vroniplag’s Javascript version}
-We found out that Vroniplag also had its own text comparison tool, which was written in JavaScript. According to the author, this web-based version was also based on the original version of Dick Grune. % \footnote{http\://de.vroniplag.wikia.com/wiki/Benutzer\:Marcusb/Farbige\_Fragmente - Date\: 24.07.2012}
+We found out that Vroniplag also had its own text comparison tool, which was written in JavaScript. According to the author, this web-based version was also based on the original version of Dick Grune.\footnote{http://de.vroniplag.wikia.com/wiki/Benutzer:Marcusb/Farbige\_Fragmente}
 
 The Javascript version could compare two fragments, it finds out the similar text passages and marks them with different colors. A text passage is defined by default as a phrase which is more than 4 tokens (words) long.
 
@@ -364,6 +362,8 @@ Bibtex function was another feature in our workbench. Based on VroniPlag, Bibtex
 
 In the document modify form there was an extra section for bibtex information. In this section, the bibtex modify form was first shown in its full form. There were over 20 fields in it. All of the fields were taken from VroniPlag. The fields \textit{Author} and \textit{Title} must be filled, the field \textit{Year} could be filled as \textit{o.J (ohne Jahrgang)} if it was unknown.
 
+\pagebreak
+
 \begin{figure}[!h]
   \centering
   \fbox{
@@ -376,10 +376,8 @@ In the document modify form there was an extra section for bibtex information. I
 If the user wanted to specify a type for his document, there were also 3 separated subforms available:
 
 \begin{itemize}
+
 \item book
-\item periodical
-\item essay
-\end{itemize}
 
 \begin{figure}[!h]
   \centering
@@ -390,14 +388,9 @@ If the user wanted to specify a type for his document, there were also 3 separat
   \label{fig:Bibtex_book_form}
 \end{figure}
 
-\begin{figure}[!h]
-  \centering
-  \fbox{
-    \includegraphics[width=0.97\textwidth]{images/bib_essay.png}
-  }
-  \caption{Bibtex essay form}
-  \label{fig:Bibtex_essay_form}
-\end{figure}
+\pagebreak
+
+\item periodical 
 
 \begin{figure}[!h]
   \centering
@@ -408,7 +401,22 @@ If the user wanted to specify a type for his document, there were also 3 separat
   \label{fig:Bibtex_periodical_form}
 \end{figure}
 
-After saving bibtex information, the user could see it again by the tab Bibliography in Unplagged. In the Bibliography section, a list of all the documents with their bibtex information are shown. If the user would like to change something, he could choose the action button to come back to the document modify form.
+\pagebreak
+
+\item essay
+
+\begin{figure}[!h]
+  \centering
+  \fbox{
+    \includegraphics[width=0.97\textwidth]{images/bib_essay.png}
+  }
+  \caption{Bibtex essay form}
+  \label{fig:Bibtex_essay_form}
+\end{figure}
+
+\end{itemize}
+
+After saving bibtex information, the user could see it again by the tab Bibliography in Unplagged. In the Bibliography section, a list of all the documents with their bibtex information are shown (see figure \ref{fig:Bibliography_list}). If the user would like to change something, he could choose the action button to come back to the document modify form.
 
 \begin{figure}[!h]
   \centering
@@ -419,7 +427,7 @@ After saving bibtex information, the user could see it again by the tab Bibliogr
   \label{fig:Bibliography_list}
 \end{figure}
 
-If the user clicked on a bibtex link, he would see the details of the bibtex information of the document. More especially, to give the user an overview, that which fragments belong to this bibtex, a list of those fragments with the comparison and colors would also be shown here.
+If the user clicked on a bibtex link, he could see the details of the bibtex information of the document. More especially, to give the user an overview, that which fragments belong to this bibtex, a list of those fragments with the comparison and colors would also be shown here  (see figure \ref{fig:Bibliography_frag_view}).
 
 \begin{figure}[!h]
   \centering
