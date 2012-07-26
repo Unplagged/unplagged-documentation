@@ -164,7 +164,7 @@ in some areas.
 The main directory structure you can see in figure \ref{fig:directoryStructure} is mostly like the one recommended by the Zend framework documentation\footnote{http://framework.zend.com/manual/en/project-structure.project.html}, which is a major building block of 
 Unplagged and the first thing we integrated.
 
-Most of the custom code that we wrote lies in the \texttt{application} directory and \texttt{library} contains nearly all the foreign code.
+Most of the custom code that we wrote lies in the \texttt{application/} directory and \texttt{library/} contains nearly all the foreign code.
 
 Public resources like CSS, JavaScript and some image files are all served from the \texttt{public/} directory, so the web server must be configured correctly to use this directory as the webroot. Every request that is made to the application is routed through the \texttt{index.php} file in this directory as well and then dispatched to Zend framework.
 
@@ -191,7 +191,7 @@ Besides this, jQuery also provides a nice set of animations, that in some cases 
 \subsection{Twitter Bootstrap}
 
 Twitter Bootstrap is a set of mostly CSS components that was integrated very late, about six or seven month into the project, and replaced the buttons and error messages we already had built. This was primarily done because the usability of those elements had a much nicer flow and the browser compatibility was also more robust out of the box.
-Later on we also used it also on some more components like dialogs and the paging element.
+Later on we also used it on some more components like dialogs and the paging element.
 
 The problem with Bootstrap is, that webpages that use it tend to look very uniform, because of all the similar looking elements, but we made this choice here, because we felt that for a webapp the usability is more important than a unique design. And hopefully we also kept some uniqueness to it.
 
